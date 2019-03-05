@@ -1,4 +1,4 @@
-var mysql      = require('mysql');
+var mysql = require('mysql');
 
 var connection = mysql.createConnection({
   host     : 'localhost',
@@ -15,10 +15,10 @@ var connection = mysql.createConnection({
 connection.connect(function(err) {
     if (err) throw err;
     //Select all customers and return the result object:
-    con.query("SELECT * FROM formulario", function (err, result, fields) {
+    connection.query("SELECT * FROM auditor", function (err, result, fields) {
       if (err) throw err;
       console.log(result);
     });
   });
  
-connection.end();
+//connection.end();
