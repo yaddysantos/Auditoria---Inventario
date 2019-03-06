@@ -1,24 +1,6 @@
-var connection = mysql.createConnection({
-  host     : 'localhost',
-  user     : 'root',
-  password : '',
-  database : 'auditoria_db'
-});
+let mongoose = require('mongoose');
 
-module.exports = config;
-
-// connection.connect(function(err) {
-//     if (err) throw err;
-//     console.log("Connected!");
-// });
-
-// connection.connect(function(err) {
-//     if (err) throw err;
-//     //Select all customers and return the result object:
-//     connection.query("SELECT * FROM auditor", function (err, result, fields) {
-//       if (err) throw err;
-//       console.log(result);
-//     });
-//   });
- 
-//connection.end();
+mongoose.connect('mongodb://localhost:27017/aufitoria_db', {useNewUrlParser: true })
+.then(() => console.log('MongoDB Connected'))
+.catch((err) => console.log(err));
+module.exports = mongoose;
