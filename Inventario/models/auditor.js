@@ -10,6 +10,6 @@ let auditorSchema = new Schema({
      claves: {type: String}
 }, {versionKey: false});
 
-let auditor = mongoose.model('auditor', auditorSchema);
+let auditor = mongoose.model('auditors', auditorSchema);
 
 module.exports = auditor;
