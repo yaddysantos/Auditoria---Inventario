@@ -1,0 +1,101 @@
+<br><br>
+<div class="container" style="background-color: #fafafa !important;">
+    <div class="row justify-content-center" style="background-color: #fafafa !important;">
+        <div class="col-md-10">
+            <form action="http://localhost:3000/auth/signup" method = "post">
+                <div class="card border-primary rounded-0" style="border-color: #17a2b8 !important; border-radius:0.25rem !important;">
+                    <div class="card-header p-0">
+                        <div class="bg-info text-center py-2" style="background-color: rgba(0,0,0,.03) !important;">
+                            <h4><i class="fas fa-user-tie"></i> Registrar Auditor</h4>
+                        </div>
+                    </div>
+                    <div class="card-body p-3">
+                        <div class="row">
+                            {{!-- cedula --}}
+                            <div class="col-md-6">
+                                <div class="form-group mb-2">
+                                    <label for="cedula"><strong><small style="color : #616161">Cedula</small></strong></label>
+                                    <div class="input-group mb-2">
+                                        <div class="input-group-prepend">
+                                            <span class= "input-group-text">
+                                                <i class="fas fa-id-card"></i>
+                                            </span>
+                                        </div>
+                                        <input type="number" class="form-control form-control-sm"  id="cedula" name="cedula">
+                                    </div>
+                                </div>
+                            </div>
+                            {{!-- Contraseña --}}
+                            <div class="col-md-6">
+                                <div class="form-group mb-2">
+                                    <label for="cedula"><strong><small style="color : #616161">Contraseña</small></strong></label>
+                                    <div class="input-group mb-2">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"><i class="fas fa-map-marked-alt"></i></span>
+                                        </div>
+                                        <input type="password" id="contraseña" name="contraseña" class="form-control form-control-sm">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            {{!-- nombre --}}
+                            <div class="col-md-6">
+                                <div class="form-goup mb-2">
+                                    <label for="cedula"><strong><small style="color : #616161">Nombre</small></strong></label>
+                                    <div class="input-group mb-2">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"><i class="fas fa-user-circle"></i></span>
+                                        </div>
+                                        <input type="text" id="nombre" name="nombre" class="form-control form-control-sm">
+                                    </div>
+                                </div>
+                            </div>
+                            {{!-- apellido --}}
+                            <div class="col-md-6">
+                                <div class="form-group mb-2">
+                                    <label for="cedula"><strong><small style="color : #616161">Apellidos</small></strong></label>
+                                    <div class="input-group mb-2">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"><i class="fas fa-user-circle"></i></span>
+                                        </div>
+                                        <input type="text" id="apellido" name="apellido" class="form-control form-control-sm">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            {{!-- email --}}
+                            <div class="col-md-6">
+                                <div class="form-group mb-2">
+                                    <label for="cedula"><strong><small style="color : #616161">Correo</small></strong></label>
+                                    <div class="input-group mb-2">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"><i class="fas fa-at"></i></span>
+                                        </div>
+                                        <input type="email" id="correo" name="correo" class="form-control form-control-sm">
+                                    </div>
+                                </div>
+                            </div>
+                            {{!-- telefono--}}
+                            <div class="col-md-6">
+                                <div class="form-group mb-2">
+                                    <label for="cedula"><strong><small style="color : #616161">Telefono</small></strong></label>
+                                    <div class="input-group mb-2">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"><i class="fas fa-map-marked-alt"></i></span>
+                                        </div>
+                                        <input type="text" id="telefono" name="telefono" class="form-control form-control-sm">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <input type="submit" name="action" value="Enviar" class=" btn btn-success btn-block" style="background-color:  #17a2b8 !important; border-color:  #17a2b8 !important;">
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
