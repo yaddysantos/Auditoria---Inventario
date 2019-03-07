@@ -2,89 +2,77 @@
 <div class="container" style="background-color: #fafafa !important;">
     <div class="row justify-content-center" style="background-color: #fafafa !important;">
         <div class="col-md-10">
-            <form action="/operar" method = "POST">
-            <input type="hidden" name="_id" value="{{auditors._id}}"/>
+            <form action="/coperar" method = "POST">
+            <input type="hidden" name="_id" value="{{clientes._id}}"/>
                 <div class="card border-primary rounded-0" style="border-color: #17a2b8 !important; border-radius:0.25rem !important;">
                     <div class="card-header p-0">
                         <div class="bg-info text-center py-2" style="background-color: rgba(0,0,0,.03) !important;">
-                            <h4><i class="fas fa-user-tie"></i> Registrar Auditor</h4>
+                            <h4><i class="fas fa-user-tie"></i> Registrar Empresa</h4>
                         </div>
                     </div>
                     <div class="card-body p-3">
                         <div class="row">
-                            {{!-- cedula --}}
+                            {{!-- nit --}}
                             <div class="col-md-6">
                                 <div class="form-group mb-2">
-                                    <label for="cedula"><strong><small style="color : #616161">Cedula</small></strong></label>
+                                    <label for="cedula"><strong><small style="color : #616161">NIT</T></strong></label>
                                     <div class="input-group mb-2">
                                         <div class="input-group-prepend">
                                             <span class= "input-group-text">
                                                 <i class="fas fa-id-card"></i>
                                             </span>
                                         </div>
-                                        <input type="number" class="form-control form-control-sm"  id="cedulas" name="cedulas" value="{{cedulas._id}}">
+                                        <input type="text" class="form-control form-control-sm"  id="nits" name="nits" value="{{nits._id}}">
                                     </div>
                                 </div>
                             </div>
-                            {{!-- Contraseña --}}
+                            {{!-- nombres --}}
                             <div class="col-md-6">
                                 <div class="form-group mb-2">
-                                    <label for="cedula"><strong><small style="color : #616161">Contraseña</small></strong></label>
+                                    <label for="cedula"><strong><small style="color : #616161">Nombre de la empresa</small></strong></label>
                                     <div class="input-group mb-2">
                                         <div class="input-group-prepend">
                                             <span class="input-group-text"><i class="fas fa-map-marked-alt"></i></span>
                                         </div>
-                                        <input type="password" id="claves" name="claves" class="form-control form-control-sm" value="{{claves._id}}">
+                                        <input type="text" id="nombres" name="nombres" class="form-control form-control-sm" value="{{nombres._id}}">
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="row">
-                            {{!-- nombre --}}
+                            {{!-- gerente --}}
                             <div class="col-md-6">
                                 <div class="form-goup mb-2">
-                                    <label for="cedula"><strong><small style="color : #616161">Nombre</small></strong></label>
+                                    <label for="cedula"><strong><small style="color : #616161">Gerente</small></strong></label>
                                     <div class="input-group mb-2">
                                         <div class="input-group-prepend">
                                             <span class="input-group-text"><i class="fas fa-user-circle"></i></span>
                                         </div>
-                                        <input type="text" id="nombres" name="nombres" class="form-control form-control-sm"value="{{nombres._id}}">
+                                        <input type="text" id="gerentes" name="gerentes" class="form-control form-control-sm"value="{{gerentes._id}}">
                                     </div>
                                 </div>
                             </div>
-                            {{!-- apellido --}}
+                            {{!-- direcciones --}}
                             <div class="col-md-6">
                                 <div class="form-group mb-2">
-                                    <label for="cedula"><strong><small style="color : #616161">Apellidos</small></strong></label>
+                                    <label for="cedula"><strong><small style="color : #616161">Dirección</small></strong></label>
                                     <div class="input-group mb-2">
                                         <div class="input-group-prepend">
                                             <span class="input-group-text"><i class="fas fa-user-circle"></i></span>
                                         </div>
-                                        <input type="text" id="apellidos" name="apellidos" class="form-control form-control-sm"value="{{apellidos._id}}">
+                                        <input type="text" id="direcciones" name="direcciones" class="form-control form-control-sm"value="{{direcciones._id}}">
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="row">
-                            {{!-- email --}}
-                            <div class="col-md-6">
-                                <div class="form-group mb-2">
-                                    <label for="cedula"><strong><small style="color : #616161">Correo</small></strong></label>
-                                    <div class="input-group mb-2">
-                                        <div class="input-group-prepend">
-                                            <span class="input-group-text"><i class="fas fa-at"></i></span>
-                                        </div>
-                                        <input type="email" id="correos" name="correos" class="form-control form-control-sm"value="{{correos._id}}">
-                                    </div>
-                                </div>
-                            </div>
-                            {{!-- telefono--}}
-                            <div class="col-md-6">
+                            {{!-- telefonos --}}
+                            <div class="col-md-12">
                                 <div class="form-group mb-2">
                                     <label for="cedula"><strong><small style="color : #616161">Telefono</small></strong></label>
                                     <div class="input-group mb-2">
                                         <div class="input-group-prepend">
-                                            <span class="input-group-text"><i class="fas fa-map-marked-alt"></i></span>
+                                            <span class="input-group-text"><i class="fas fa-at"></i></span>
                                         </div>
                                         <input type="text" id="telefonos" name="telefonos" class="form-control form-control-sm"value="{{telefonos._id}}">
                                     </div>
