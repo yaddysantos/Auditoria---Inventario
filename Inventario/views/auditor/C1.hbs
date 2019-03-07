@@ -1,243 +1,370 @@
 <!-- cuestionario 1 -->
-<div class="container">
-    <h1 class="center">CUESTIONARIO DE CONTROL AUDITORIA DE SISTEMAS C1</h1>
-    <section >
+<head>
+    <meta charset="UTF-8">
+<title>Formulrio de Encuesta</title>
+    <meta name = "viewport" content = "width=device-width, user-scalable=no, initial-scalable=1.8, maximum-scale=1.8, minimum-scale=1.8">
+   {{!-- <link rel="stylesheet" href="/stylesheets/estilosC1.css"> --}}
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+      <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+      <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+      <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+      <link href='https://fonts.googleapis.com/css?family=Abril Fatface' rel='stylesheet'>
+</head>
+<body>
+    <div class = "contenedor">
+        <header class="title">
+            <div class = "col-title">
+                    
+                <h3 class="text-center"> <strong>Cuestionario de control de auditoria de sistemas C1</strong></h3>
+            </div>
+         </header>
+        <form action=""  method="post" accept-charset="utf-8">
+            <div class = "form-group">
+                
+                <label for="inputempresa"><strong>Nombre de la empresa:</strong></label>
+                <input type="text" class="form-control" id="inputempresa" placeholder="Nombre de la empresa">   
+                <br>
+                
+                <label for="dominio"><strong>Dominio:</strong></label>
+                <span>Adquisición e Implementación</span>
+                 <br>
+                 
+                <label for="dominio"><strong>Proceso:</strong></label>
+                <span>Adquirir y mantener la arquitectura tecnológica</span>
+                <br>
+                
+                <label for="dominio"><strong>Objetivo de control:</strong></label>
+                <span>Evaluacion de Nuevo Hardware</span>
+            </div>
+            {{!-- <div class= "intro-first">  
+                <p> Hola,</p>
+                <p>Por favor, invierta unos pocos minutos de su tiempo para rellenar el siguiente couestionario</p>
+            </div> --}}
+            
+            <div class = "title-part">
+               <strong>¿Se cuenta con un invenatario de todos los equipos que integran el centro de cómputo?</strong>
+               <div class = "radio">
+                   <label >
+                       <input type="radio" name="optionRadios" id="optionsRadios1" value="option1" checked="checked">
+                        Si.
+                   </label>
+                   <br>
+                   <label >
+                       <input type="radio" name="optionRadios" id="optionsRadios1" value="option1" checked="checked">
+                        No.
+                   </label>
+                   <br>
+                   <label >
+                       <input type="radio" name="optionRadios" id="optionsRadios1" value="option1" checked="checked">
+                        No sabe/no responde.
+                   </label>
+               </div>
 
-    <div class="input-group mb-3" >
-    <div class="input-group-prepend">
-        <span class="input-group-text" id="basic-addon1">Empresa:</span>
-    </div>
-    <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
-    </div>
+            </div>
+            
+             <div class = "title-part">
+               <strong>¿Se posee de bitácoras de fallas detectadas en los equipos?</strong>
+               <div class = "radio">
+                   <label >
+                       <input type="radio" name="optionRadios" id="optionsRadios1" value="option1" checked="checked">
+                        Si.
+                   </label>
+                   <br>
+                   <label >
+                       <input type="radio" name="optionRadios" id="optionsRadios1" value="option1" checked="checked">
+                        No.
+                   </label>
+                   <br>
+                   <label >
+                       <input type="radio" name="optionRadios" id="optionsRadios1" value="option1" checked="checked">
+                        No sabe/no responde.
+                   </label>
+               </div>
 
-    <div class="input-group mb-3">
-    <div class="input-group-prepend">
-        <span class="input-group-text" id="basic-addon1">Dominio:</span>
-    </div>
-    <!--<input type="text" class="form-control">-->
-    <span class="input-group-text">Adquisición e Implementación</span>
-    </div>
+            </div>
 
-    <div class="input-group mb-3">
-    <div class="input-group-prepend">
-        <span class="input-group-text" id="basic-addon1">Proceso:</span>
-    </div>
-    <!--<input type="text" class="form-control">-->
-    <span class="input-group-text">Adquirir y mantener la arquitectura tecnológica</span>
-    </div>
+              <div class = "title-part">
+               <strong>¿Con cuanta frecuencia se revisa el inventario?</strong>
+               <div class = "radio">
+                   <label >
+                       <input type="radio" name="optionRadios" id="optionsRadios1" value="option1" checked="checked">
+                        Si.
+                   </label>
+                   <br>
+                   <label >
+                       <input type="radio" name="optionRadios" id="optionsRadios1" value="option1" checked="checked">
+                        No.
+                   </label>
+                   <br>
+                   <label >
+                       <input type="radio" name="optionRadios" id="optionsRadios1" value="option1" checked="checked">
+                        No sabe/no responde.
+                   </label>
+               </div>
 
-    <div class="input-group mb-3">
-    <div class="input-group-prepend">
-        <span class="input-group-text" id="basic-addon1">Objetivo de Control:</span>
-    </div>
-    <!--<input type="text" class="form-control">-->
-    <span class="input-group-text">Evaluacion de Nuevo Hardware</span>
-    </div>
+            </div>
 
+            <div class = "title-part">
+               <strong>¿La bitácora es llenada por el personal especializado?</strong>
+               <div class = "radio">
+                   <label >
+                       <input type="radio" name="optionRadios" id="optionsRadios1" value="option1" checked="checked">
+                        Si.
+                   </label>
+                   <br>
+                   <label >
+                       <input type="radio" name="optionRadios" id="optionsRadios1" value="option1" checked="checked">
+                        No.
+                   </label>
+                   <br>
+                   <label >
+                       <input type="radio" name="optionRadios" id="optionsRadios1" value="option1" checked="checked">
+                        No sabe/no responde.
+                   </label>
+               </div>
+            </div>
 
-    <div class="input-group-prepend" >
-        <!--<span class="input-group-text" id="basic-addon1">Cuestionario</span>-->
-        <input type="text" class="form-control" value="CUESTIONARIO" > 
-    </div>
+            <div class = "col-title">
+                    
+                <h3 class="text-center"> <strong>Caracteristicas de la bitocara (Señala las opciones)</strong></h3>
+            </div>
 
-    <div class="input-group-prepend">
-        <input type="text" class="form-control" value="Preguntas">
-        <span class="input-group-text" id="basic-addon1">SI</span>
-        <span class="input-group-text" id="basic-addon1">NO</span>
-        <span class="input-group-text" id="basic-addon1">N/A</span>
-    </div>
+            <div class = "title-part">
+               <strong>¿La bitácora es llenada por el personal especializado?</strong>
+               <div class = "radio">
+                   <label >
+                       <input type="radio" name="optionRadios" id="optionsRadios1" value="option1" checked="checked">
+                        Si.
+                   </label>
+                   <br>
+                   <label >
+                       <input type="radio" name="optionRadios" id="optionsRadios1" value="option1" checked="checked">
+                        No.
+                   </label>
+                   <br>
+                   <label >
+                       <input type="radio" name="optionRadios" id="optionsRadios1" value="option1" checked="checked">
+                        No sabe/no responde.
+                   </label>
+               </div>
+            </div>
 
-    <div class="input-group-prepend">
-        <input type="text" class="form-control" value="¿Se cuenta con un invenatario de todos los equipos que integran el centro de cómputo?">
-        <div class="input-group-text">
-        <input type="radio" aria-label="Radio button for following text input">
+              <div class = "title-part">
+               <strong>¿La bitácora es llenada por el personal especializado?</strong>
+               <div class = "radio">
+                   <label >
+                       <input type="radio" name="optionRadios" id="optionsRadios1" value="option1" checked="checked">
+                        Si.
+                   </label>
+                   <br>
+                   <label >
+                       <input type="radio" name="optionRadios" id="optionsRadios1" value="option1" checked="checked">
+                        No.
+                   </label>
+                   <br>
+                   <label >
+                       <input type="radio" name="optionRadios" id="optionsRadios1" value="option1" checked="checked">
+                        No sabe/no responde.
+                   </label>
+               </div>
+            </div>
+
+              <div class = "title-part">
+               <strong>¿Señala fecha de detección de la falla?</strong>
+               <div class = "radio">
+                   <label >
+                       <input type="radio" name="optionRadios" id="optionsRadios1" value="option1" checked="checked">
+                        Si.
+                   </label>
+                   <br>
+                   <label >
+                       <input type="radio" name="optionRadios" id="optionsRadios1" value="option1" checked="checked">
+                        No.
+                   </label>
+                   <br>
+                   <label >
+                       <input type="radio" name="optionRadios" id="optionsRadios1" value="option1" checked="checked">
+                        No sabe/no responde.
+                   </label>
+               </div>
+            </div>
+
+            <div class = "title-part">
+               <strong>¿Señala fecha de corrección de la falla y revisión de que el equipo funcione correctamente?</strong>
+               <div class = "radio">
+                   <label >
+                       <input type="radio" name="optionRadios" id="optionsRadios1" value="option1" checked="checked">
+                        Si.
+                   </label>
+                   <br>
+                   <label >
+                       <input type="radio" name="optionRadios" id="optionsRadios1" value="option1" checked="checked">
+                        No.
+                   </label>
+                   <br>
+                   <label >
+                       <input type="radio" name="optionRadios" id="optionsRadios1" value="option1" checked="checked">
+                        No sabe/no responde.
+                   </label>
+               </div>
+            </div>
+
+            
+            <div class = "title-part">
+               <strong>¿Se poseen registros individuales de los equipos?</strong>
+               <div class = "radio">
+                   <label >
+                       <input type="radio" name="optionRadios" id="optionsRadios1" value="option1" checked="checked">
+                        Si.
+                   </label>
+                   <br>
+                   <label >
+                       <input type="radio" name="optionRadios" id="optionsRadios1" value="option1" checked="checked">
+                        No.
+                   </label>
+                   <br>
+                   <label >
+                       <input type="radio" name="optionRadios" id="optionsRadios1" value="option1" checked="checked">
+                        No sabe/no responde.
+                   </label>
+               </div>
+            </div>
+
+            <div class = "title-part">
+               <strong>¿La bitácora hace referencia a hojas de servicio, en donde se detalla la falla, y las causas que la orginaron, asi como las refacciones utilizadas?</strong>
+               <div class = "radio">
+                   <label >
+                       <input type="radio" name="optionRadios" id="optionsRadios1" value="option1" checked="checked">
+                        Si.
+                   </label>
+                   <br>
+                   <label >
+                       <input type="radio" name="optionRadios" id="optionsRadios1" value="option1" checked="checked">
+                        No.
+                   </label>
+                   <br>
+                   <label >
+                       <input type="radio" name="optionRadios" id="optionsRadios1" value="option1" checked="checked">
+                        No sabe/no responde.
+                   </label>
+               </div>
+            </div>
+
+        <div class = "title-part">
+               <strong>¿Se lleva un control de los equipos en garantía, para que a la finalización de ésta, se integren a algún programa de mantenimiento?</strong>
+               <div class = "radio">
+                   <label >
+                       <input type="radio" name="optionRadios" id="optionsRadios1" value="option1" checked="checked">
+                        Si.
+                   </label>
+                   <br>
+                   <label >
+                       <input type="radio" name="optionRadios" id="optionsRadios1" value="option1" checked="checked">
+                        No.
+                   </label>
+                   <br>
+                   <label >
+                       <input type="radio" name="optionRadios" id="optionsRadios1" value="option1" checked="checked">
+                        No sabe/no responde.
+                   </label>
+               </div>
+            </div>
+
+              <div class = "title-part">
+               <strong>¿Se cuenta con servicio de mantenimiento para todos los equipos?</strong>
+               <div class = "radio">
+                   <label >
+                       <input type="radio" name="optionRadios" id="optionsRadios1" value="option1" checked="checked">
+                        Si.
+                   </label>
+                   <br>
+                   <label >
+                       <input type="radio" name="optionRadios" id="optionsRadios1" value="option1" checked="checked">
+                        No.
+                   </label>
+                   <br>
+                   <label >
+                       <input type="radio" name="optionRadios" id="optionsRadios1" value="option1" checked="checked">
+                        No sabe/no responde.
+                   </label>
+               </div>
+            </div>
+
+                  <div class = "title-part">
+               <strong>¿Con cuanta frecuencia se realiza mantenimiento a los equipos?</strong>
+               <div class = "radio">
+                   <label >
+                       <input type="radio" name="optionRadios" id="optionsRadios1" value="option1" checked="checked">
+                        Si.
+                   </label>
+                   <br>
+                   <label >
+                       <input type="radio" name="optionRadios" id="optionsRadios1" value="option1" checked="checked">
+                        No.
+                   </label>
+                   <br>
+                   <label >
+                       <input type="radio" name="optionRadios" id="optionsRadios1" value="option1" checked="checked">
+                        No sabe/no responde.
+                   </label>
+               </div>
+            </div>
+
+                <div class = "title-part">
+               <strong>¿Se cuenta con procedimientos definidos para la adquisición de nuevos equipos?</strong>
+               <div class = "radio">
+                   <label >
+                       <input type="radio" name="optionRadios" id="optionsRadios1" value="option1" checked="checked">
+                        Si.
+                   </label>
+                   <br>
+                   <label >
+                       <input type="radio" name="optionRadios" id="optionsRadios1" value="option1" checked="checked">
+                        No.
+                   </label>
+                   <br>
+                   <label >
+                       <input type="radio" name="optionRadios" id="optionsRadios1" value="option1" checked="checked">
+                        No sabe/no responde.
+                   </label>
+               </div>
+            </div>
+
+               <div class = "title-part">
+               <strong>¿Se tienen criterios de evaluación para determinar el rendimiento de los equipos a adquirir y así elegir el mejor?</strong>
+               <div class = "radio">
+                   <label >
+                       <input type="radio" name="optionRadios" id="optionsRadios1" value="option1" checked="checked">
+                        Si.
+                   </label>
+                   <br>
+                   <label >
+                       <input type="radio" name="optionRadios" id="optionsRadios1" value="option1" checked="checked">
+                        No.
+                   </label>
+                   <br>
+                   <label >
+                       <input type="radio" name="optionRadios" id="optionsRadios1" value="option1" checked="checked">
+                        No sabe/no responde.
+                   </label>
+               </div>
+            </div>
+        <div class = "form-group">
+          <label for="inputempresa"><strong>Documentos probatorios:</strong></label>
+            <input type="text" class="form-control" id="inputempresa" placeholder="Nombre de la empresa">   
+
         </div>
-        <div class="input-group-text">
-        <input type="radio" aria-label="Radio button for following text input">
-        </div>
-        <div class="input-group-text">
-        <input type="radio" aria-label="Radio button for following text input">
-        </div>
-    </div>
 
-    <div class="input-group-prepend">
-        <input type="text" class="form-control" value="¿Con cuanta frecuencia se revisa el inventario?">
-        <div class="input-group-text">
-        <input type="radio" aria-label="Radio button for following text input">
-        </div>
-        <div class="input-group-text">
-        <input type="radio" aria-label="Radio button for following text input">
-        </div>
-        <div class="input-group-text">
-        <input type="radio" aria-label="Radio button for following text input">
-        </div>
-    </div>
+        <div class = "form-group">
+          <label for="inputempresa"><strong>Total:</strong></label>
+            <input type="text" class="form-control" id="inputempresa" placeholder="Nombre de la empresa">   
 
-    <div class="input-group-prepend">
-        <input type="text" class="form-control" value="¿Se posee de bitácoras de fallas detectadas en los equipos?">
-        <div class="input-group-text">
-        <input type="radio" aria-label="Radio button for following text input">
         </div>
-        <div class="input-group-text">
-        <input type="radio" aria-label="Radio button for following text input">
-        </div>
-        <div class="input-group-text">
-        <input type="radio" aria-label="Radio button for following text input">
-        </div>
-    </div>
+        
+            
 
-    <div class="input-group-prepend" >
-        <input type="text" class="form-control" value="CARACTERÍSTICAS DE LA BITÁCORA (SEÑALE LAS OPCIONES)" > 
+            
+        </form>
     </div>
-
-    <div class="input-group-prepend">
-        <input type="text" class="form-control" value="¿La bitácora es llenada por el personal especializado?">
-        <div class="input-group-text">
-        <input type="radio" aria-label="Radio button for following text input">
-        </div>
-        <div class="input-group-text">
-        <input type="radio" aria-label="Radio button for following text input">
-        </div>
-        <div class="input-group-text">
-        <input type="radio" aria-label="Radio button for following text input">
-        </div>
-    </div>
-
-    <div class="input-group-prepend">
-        <input type="text" class="form-control" value="¿Señala fecha de detección de la falla?">
-        <div class="input-group-text">
-        <input type="radio" aria-label="Radio button for following text input">
-        </div>
-        <div class="input-group-text">
-        <input type="radio" aria-label="Radio button for following text input">
-        </div>
-        <div class="input-group-text">
-        <input type="radio" aria-label="Radio button for following text input">
-        </div>
-    </div>
-
-    <div class="input-group-prepend">
-        <input type="text" class="form-control" value="¿Señala fecha de corrección de la falla y revisión de que el equipo funcione correctamente?">
-        <div class="input-group-text">
-        <input type="radio" aria-label="Radio button for following text input">
-        </div>
-        <div class="input-group-text">
-        <input type="radio" aria-label="Radio button for following text input">
-        </div>
-        <div class="input-group-text">
-        <input type="radio" aria-label="Radio button for following text input">
-        </div>
-    </div>
-
-    <div class="input-group-prepend">
-    <input type="text" class="form-control" value="¿Se poseen registros individuales de los equipos?">
-    <div class="input-group-text">
-        <input type="radio" aria-label="Radio button for following text input">
-    </div>
-    <div class="input-group-text">
-        <input type="radio" aria-label="Radio button for following text input">
-    </div>
-    <div class="input-group-text">
-        <input type="radio" aria-label="Radio button for following text input">
-    </div>
-    </div>
-
-    <div class="input-group-prepend">
-    <input type="text" class="form-control" value="¿La bitácora hace referencia a hojas de servicio, en donde se detalla la falla, y las causas que la orginaron, asi como las refacciones utilizadas?">
-    <div class="input-group-text">
-        <input type="radio" aria-label="Radio button for following text input">
-    </div>
-    <div class="input-group-text">
-        <input type="radio" aria-label="Radio button for following text input">
-    </div>
-    <div class="input-group-text">
-        <input type="radio" aria-label="Radio button for following text input">
-    </div>
-    </div>
-
-    <div class="input-group-prepend">
-    <input type="text" class="form-control" value="¿Se lleva un control de los equipos en garantía, para que a la finalización de ésta, se integren a algún programa de mantenimiento?">
-    <div class="input-group-text">
-        <input type="radio" aria-label="Radio button for following text input">
-    </div>
-    <div class="input-group-text">
-        <input type="radio" aria-label="Radio button for following text input">
-    </div>
-    <div class="input-group-text">
-        <input type="radio" aria-label="Radio button for following text input">
-    </div>
-    </div>
-
-    <div class="input-group-prepend">
-    <input type="text" class="form-control" value="¿Se cuenta con servicio de mantenimiento para todos los equipos?">
-    <div class="input-group-text">
-        <input type="radio" aria-label="Radio button for following text input">
-    </div>
-    <div class="input-group-text">
-        <input type="radio" aria-label="Radio button for following text input">
-    </div>
-    <div class="input-group-text">
-        <input type="radio" aria-label="Radio button for following text input">
-    </div>
-    </div>
-
-    <div class="input-group-prepend">
-    <input type="text" class="form-control" value="¿Con cuanta frecuencia se realiza mantenimiento a los equipos?">
-    <div class="input-group-text">
-        <input type="radio" aria-label="Radio button for following text input">
-    </div>
-    <div class="input-group-text">
-        <input type="radio" aria-label="Radio button for following text input">
-    </div>
-    <div class="input-group-text">
-        <input type="radio" aria-label="Radio button for following text input">
-    </div>
-    </div>
-
-    <div class="input-group-prepend">
-    <input type="text" class="form-control" value="¿Se cuenta con procedimientos definidos para la adquisición de nuevos equipos?">
-    <div class="input-group-text">
-        <input type="radio" aria-label="Radio button for following text input">
-    </div>
-    <div class="input-group-text">
-        <input type="radio" aria-label="Radio button for following text input">
-    </div>
-    <div class="input-group-text">
-        <input type="radio" aria-label="Radio button for following text input">
-    </div>
-    </div>
-
-    <div class="input-group-prepend">
-    <input type="text" class="form-control" value="¿Se tienen criterios de evaluación para determinar el rendimiento de los equipos a adquirir y así elegir el mejor?">
-    <div class="input-group-text">
-        <input type="radio" aria-label="Radio button for following text input">
-    </div>
-    <div class="input-group-text">
-        <input type="radio" aria-label="Radio button for following text input">
-    </div>
-    <div class="input-group-text">
-        <input type="radio" aria-label="Radio button for following text input">
-    </div>
-    </div>
-
-    <div class="input-group-prepend">
-    <input type="text" class="form-control" value="Documentos probatorios presentados:">
-    <div class="input-group-text">
-        <input type="radio" aria-label="Radio button for following text input">
-    </div>
-    <div class="input-group-text">
-        <input type="radio" aria-label="Radio button for following text input">
-    </div>
-    <div class="input-group-text">
-        <input type="radio" aria-label="Radio button for following text input">
-    </div>
-    </div>
-
-    <div class="input-group-prepend">
-    <input type="text" class="form-control" value="TOTAL">
-    <span class="input-group-text" id="basic-addon1"></span>
-    <span class="input-group-text" id="basic-addon1"></span>
-    <span class="input-group-text" id="basic-addon1"></span>
-    </div>
-    </section>
-</div>
+</body>

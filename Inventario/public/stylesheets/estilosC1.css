@@ -1,0 +1,43 @@
+.contenedor{
+    margin: 1rem;
+    padding: 1rem;
+    border: 2px solid #ccc;
+}
+.text-center{
+    background-color: #fafafa;
+    margin: 1rem;
+    padding: 1rem;
+ 
+     /* IMPORTANTE */
+    text-align: center;
+    font-family: 'Antic';font-size: 22px;
+    font-size: 30px;
+    
+}
+.intro-first{
+    margin: 1rem;
+    padding: 2em;
+   
+    text-align: justify;
+}
+.form-group{
+    margin: 1rem;
+    padding: 2em;
+    border: 2px solid #ccc;
+    font-family: 'Antic';font-size: 22px;
+    text-align: justify;
+}
+.title-part{
+
+    background-color: #fafafa;
+    margin: 1rem;
+    padding: 2rem;
+ 
+     /* IMPORTANTE */
+
+    text-align: justify;
+
+    border: 2px solid #ccc;
+    font-family: 'Antic';font-size: 22px;
+    
+}
