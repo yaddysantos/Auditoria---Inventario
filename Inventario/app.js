@@ -6,10 +6,15 @@ var logger = require('morgan');
 var exphbs = require('express-handlebars');
 var methodOverrie = require('method-override');
 var session = require('express-session');
+var passport = require('passport');
+var LocalStrategy = require('passport-local');
+var flash = require('connect-flash');
+
 
 //Iniicilizaciones
 var app = express();
 require('./../Inventario/Conexion/connect');
+require('./../Inventario/Config/passport');
 
 //ajustes del puertoo
 app.set('port', process.env.PORT || 3000);
@@ -38,6 +43,18 @@ app.use(session({
      resave: true,
      saveUninitialized: true
 }));
+
+app.use(passport.initialize());
+app.use(passport.session());
+app.use(flash());
+
+//globall
+app.use((req, res, next) =>{
+     res.locals.success_msg = req.flash('success_msg');
+     res.locals.error_msg = req.flash('error_msg');
+     res.locals.error_msg = req.flash('error');
+     next();
+});
 
 //Routas
 app.use(require('../Inventario/routes/index'));

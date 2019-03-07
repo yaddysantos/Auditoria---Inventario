@@ -1,4 +1,5 @@
 let mongoose = require('mongoose');
+var bcrypt = require('bcryptjs');
 let Schema = mongoose.Schema;
 
 let auditorSchema = new Schema({
@@ -11,5 +12,9 @@ let auditorSchema = new Schema({
 }, {versionKey: false});
 
 let auditor = mongoose.model('auditors', auditorSchema);
+
+auditorSchema.methods.matchPassword = function(claves){
+     return bcrypt.compare(claves, this.claves);
+};
 
 module.exports = auditor;
