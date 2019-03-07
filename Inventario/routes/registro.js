@@ -23,7 +23,6 @@ if (req.body._id === "") {
      telefonos: req.body.telefonos,
      claves: req.body.claves
      });
-     
      au.save();
 } else {    
      console.log(req.body._id);
@@ -31,7 +30,7 @@ if (req.body._id === "") {
      if (err) throw err;
      });
 }
-res.redirect('/');
+res.redirect('/Login');
 });
    
 module.exports = router;

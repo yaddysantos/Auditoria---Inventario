@@ -42,7 +42,7 @@ app.use(session({
 //Routas
 app.use(require('../Inventario/routes/index'));
 app.use(require('../Inventario/routes/registro'));
-app.use(require('../Inventario/routes/auditorForm'));
+app.use(require('../Inventario/routes/cliente'));
 
 //Archivos estaticos
 
