@@ -24,4 +24,8 @@ router.get('/formulario/c4', (req, res,next) =>{
 router.get('/formulario/c5', (req, res,next) =>{
      res.render('auditor/C5', {});
 });
+
+router.get('/formulario/c6', (req, res,next) =>{
+     res.render('auditor/C6', {});
+});
 module.exports = router;

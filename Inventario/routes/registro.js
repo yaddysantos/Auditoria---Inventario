@@ -1,4 +1,5 @@
 var express = require('express');
+var passport = require('passport');
 var router = express.Router();
 
 let auditor = require('../models/auditor');
@@ -10,6 +11,12 @@ router.get('/registro', (req, res,next) =>{
 router.get('/login', (req, res,next) =>{
      res.render('auditor/sesion',{});
 });
+
+router.post('/login/usuario', passport.authenticate('local', {
+     successRedirect: '/registro',
+     failureRedirect: '/index',
+     failureFlash: true
+}));
 
 router.post('/operar', (req, res, next) => {
 console.log(req.body);  
