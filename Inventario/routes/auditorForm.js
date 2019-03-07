@@ -1,27 +1,22 @@
 let express = require('express');
 let router = express.Router();
 
-let mongoose = require('./../Conexion/connect');
-let auditor = require('./../models/auditor');
+// router.post('/', (req, res) =>{
+//     var cedulas = req.body.cedulas;
+//     var claves = req.body.claves;
 
-//loggear usuario
-
-router.post('/', (req, res) =>{
-    var cedulas = req.body.cedulas;
-    var claves = req.body.claves;
-
-    auditor.findOne({cedulas: cedulas, claves: claves}, (err, user) => {
-      if(err){
-        console.log(err);
-      }    
+//     auditor.findOne({cedulas: cedulas, claves: claves}, (err, user) => {
+//       if(err){
+//         console.log(err);
+//       }    
       
-      if(user){
-        return res.status(404).send();
-      }
+//       if(user){
+//         return res.status(404).send();
+//       }
 
-      return res.status(200).send();
-    })
-});
+//       return res.status(200).send();
+//     })
+// });
 
 //registrat el formulario
 router.post('/auditor/operar', (req, res, next) => {
