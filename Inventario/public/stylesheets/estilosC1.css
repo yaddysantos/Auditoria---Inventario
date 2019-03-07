@@ -1,7 +1,7 @@
 .contenedor{
     margin: 1rem;
     padding: 1rem;
-    border: 2px solid #ccc;
+    border: 2px solid #12919c;
 }
 .text-center{
     background-color: #fafafa;
@@ -23,7 +23,7 @@
 .form-group{
     margin: 1rem;
     padding: 2em;
-    border: 2px solid #ccc;
+    border: 2px solid #00b2cc;
     font-family: 'Antic';font-size: 22px;
     text-align: justify;
 }
@@ -37,7 +37,7 @@
 
     text-align: justify;
 
-    border: 2px solid #ccc;
+    border: 2px solid #0bcad1;
     font-family: 'Antic';font-size: 22px;
     
 }
