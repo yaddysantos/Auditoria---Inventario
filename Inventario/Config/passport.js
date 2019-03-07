@@ -1,12 +1,12 @@
 var passport = require('passport');
-var LocalStrategy = require('passport-local').Strategy;
+var LocalStrategy = require('passport-local');
 let auditors = require('../models/auditor');
 //let cliente = require('../models/cliente');
 
 passport.use(new LocalStrategy({
      usernameField: 'cedulas'
      }, (cedulas, claves, done) =>{
-          let au = auditors.findOne({cedulas: cedulas});
+          const au = auditors.findOne({cedulas: cedulas});
           if(!au)
           {
                return done(null, false);

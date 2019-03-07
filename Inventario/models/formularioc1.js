@@ -2,7 +2,6 @@ let mongoose = require('mongoose');
 let Schema = mongoose.Schema;
 
 let formularioc1Schema = new Schema({
-     ids: {type: String },
      clientes: {type: String},
      pregunta1s: {type: Number, max:3 },
      pregunta2s: {type: Number, max:3 },
@@ -17,10 +16,10 @@ let formularioc1Schema = new Schema({
      pregunta11s: {type: Number, max:3 },
      pregunta12s: {type: Number, max:3 },
      pregunta13s: {type: Number, max:3 },
-     doc: {type: Number},
-     totals: {type: Number},
-     totaln: {type: Number},
-     totalns: {type: Number}
+     docs: {type: Number},
+     totalss: {type: Number},
+     totalns: {type: Number},
+     totalnss: {type: Number}
 }, {versionKey: false});
 
 let formularioc1 = mongoose.model('formularioc1s', formularioc1Schema);

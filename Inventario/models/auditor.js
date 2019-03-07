@@ -11,10 +11,10 @@ let auditorSchema = new Schema({
      claves: {type: String}
 }, {versionKey: false});
 
-let auditor = mongoose.model('auditors', auditorSchema);
-
 auditorSchema.methods.matchPassword = function(claves){
      return bcrypt.compare(claves, this.claves);
 };
+
+let auditor = mongoose.model('auditors', auditorSchema);
 
 module.exports = auditor;
