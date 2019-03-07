@@ -1,25 +1,10 @@
 let express = require('express');
 let router = express.Router();
 
-// router.post('/', (req, res) =>{
-//     var cedulas = req.body.cedulas;
-//     var claves = req.body.claves;
-
-//     auditor.findOne({cedulas: cedulas, claves: claves}, (err, user) => {
-//       if(err){
-//         console.log(err);
-//       }    
-      
-//       if(user){
-//         return res.status(404).send();
-//       }
-
-//       return res.status(200).send();
-//     })
-// });
+let auditor = require('../models/auditor');
 
 //registrat el formulario
-router.post('/auditor/operar', (req, res, next) => {
+router.post('/auditor', (req, res, next) => {
   console.log(req.body);  
 
   if (req.body._id === "") {
