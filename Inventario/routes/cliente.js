@@ -27,7 +27,7 @@ router.post('/coperar', (req, res, next) => {
       if (err) throw err;
     });
   }
-  res.redirect('/');
+  res.redirect('/clientet');
 });
 
 router.get('/clientet', (req, res,next) =>{
@@ -37,7 +37,7 @@ router.get('/clientet', (req, res,next) =>{
   });
 });
 
-router.get('/modificar/:id', (req, res, next) =>{
+router.get('/cliente/modificar/:id', (req, res, next) =>{
   let idcliente = req.params.id;
   cliente.findOne({_id: idcliente}, (err, clientes) =>{
        if(err) throw err;
@@ -45,7 +45,7 @@ router.get('/modificar/:id', (req, res, next) =>{
   });
 });
 
-router.get('/eliminar/:id', (req, res, next) =>{
+router.get('/cliente/eliminar/:id', (req, res, next) =>{
   let idcliente = req.params.id;
   cliente.remove({_id: idcliente}, (err) =>{
        res.redirect('/clientet');
