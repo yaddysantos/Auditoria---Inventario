@@ -2,8 +2,6 @@ let mongoose = require('mongoose');
 let Schema = mongoose.Schema;
 
 let formularioc2Schema = new Schema({
-     ids: {type: String },
-     clientes: {type: String},
      pregunta1s: {type: Number, max:3 },
      pregunta2s: {type: Number, max:3 },
      pregunta3s: {type: Number, max:3 },
