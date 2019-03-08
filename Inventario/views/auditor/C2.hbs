@@ -20,7 +20,10 @@
          </header>
         <form action="/c2"  method="post" accept-charset="utf-8">
             <div class = "form-group">
-                
+                <input type="hidden" name="_id" value="{{auditors._id}}"/>
+                <label for="inputempresa"><strong>Nombre de la empresa:</strong></label>
+                <input type="text" class="form-control" id="clientes" name="clientes" placeholder="Nombre de la empresa">   
+                <br>
                 <label for="dominio"><strong>Dominio:</strong></label>
                 <span>Adquisición e Implementación</span>
                  <br>
