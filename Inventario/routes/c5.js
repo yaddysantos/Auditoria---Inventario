@@ -33,8 +33,6 @@ router.post('/c5', (req, res, next) => {
      pregunta17s: req.body.pregunta17s,
      pregunta18s: req.body.pregunta18s,
      pregunta19s: req.body.pregunta19s,
-     pregunta20s: req.body.pregunta20s,
-     pregunta21s: req.body.pregunta21s,
      docs: req.body.docs,
      totalss: req.body.totalss,
      totalns: req.body.totalns,

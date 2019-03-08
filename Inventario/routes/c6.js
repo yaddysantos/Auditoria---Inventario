@@ -33,7 +33,7 @@ router.post('/c6', (req, res, next) => {
       if (err) throw err;
     });
   }
-  res.redirect('/index');
+  res.redirect('/msj');
 });
 
 module.exports = router;

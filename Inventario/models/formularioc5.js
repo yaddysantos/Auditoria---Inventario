@@ -23,8 +23,6 @@ let formularioc5Schema = new Schema({
      pregunta17s: {type: Number, max:3 },
      pregunta18s: {type: Number, max:3 },
      pregunta19s: {type: Number, max:3 },
-     pregunta20s: {type: Number, max:3 },
-     pregunta21s: {type: Number, max:3 },
      docs: {type: Number},
      totalss: {type: Number},
      totalns: {type: Number},

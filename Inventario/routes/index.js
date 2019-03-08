@@ -5,12 +5,9 @@ router.get('/', (req, res,next) =>{
      res.render('index');
 });
 
-
-router.get('/formulario/c5', (req, res,next) =>{
-     res.render('auditor/C5', {});
+router.get('/msj', (req, res,next) =>{
+     res.render('auditor/mensaje', {});
 });
 
-router.get('/formulario/c6', (req, res,next) =>{
-     res.render('auditor/C6', {});
-});
+
 module.exports = router;
