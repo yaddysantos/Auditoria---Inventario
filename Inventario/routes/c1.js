@@ -40,7 +40,7 @@ router.post('/c1', (req, res, next) => {
       if (err) throw err;
     });
   }
-  res.redirect('/formulario/c2');
+  res.redirect('/c2');
 });
 
 module.exports = router;
