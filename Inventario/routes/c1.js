@@ -36,7 +36,7 @@ router.post('/c1', (req, res, next) => {
     C1.save();
   } else {    
     console.log(req.body._id);
-    formularioc1s.findByIdAndUpdate(req.body._id, { $set: req.body }, { new: true}, (err, model) => {
+    c1.findByIdAndUpdate(req.body._id, { $set: req.body }, { new: true}, (err, model) => {
       if (err) throw err;
     });
   }

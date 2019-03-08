@@ -5,6 +5,7 @@ router.get('/', (req, res,next) =>{
      res.render('index');
 });
 
+
 router.get('/msj', (req, res,next) =>{
      res.render('auditor/mensaje', {});
 });

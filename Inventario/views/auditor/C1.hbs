@@ -21,7 +21,7 @@
          </header>
         <form action="/c1"  method="post" accept-charset="utf-8">
             <div class = "form-group">
-                <input type="hidden" name="_id" value="{{auditors._id}}"/>
+                <input type="hidden" name="_id" value="{{formularioc1s._id}}"/>
                 <label for="inputempresa"><strong>Nombre de la empresa:</strong></label>
                 <input type="text" class="form-control" id="clientes" name="clientes" placeholder="Nombre de la empresa">   
                 <br>
@@ -46,17 +46,17 @@
                <strong>¿Se cuenta con un invenatario de todos los equipos que integran el centro de cómputo?</strong>
                <div class = "radio">
                    <label >
-                       <input type="radio" name="pregunta1s" id="pregunta1s" value="1" checked="checked">
+                       <input type="radio" name="pregunta1s" id="pregunta1s" value="1" checked="checked" value="{{formularioc1s.pregunta1s}}">
                         Si.
                    </label>
                    <br>
                    <label >
-                       <input type="radio" name="pregunta1s" id="pregunta1s" value="2" checked="checked">
+                       <input type="radio" name="pregunta1s" id="pregunta1s" value="2" checked="checked" value="{{formularioc1s.pregunta1s}}">
                         No.
                    </label>
                    <br>
                    <label >
-                       <input type="radio" name="pregunta1s" id="pregunta1s" value="3" checked="checked">
+                       <input type="radio" name="pregunta1s" id="pregunta1s" value="3" checked="checked" value="{{formularioc1s.pregunta1s}}">
                         No sabe/no responde.
                    </label>
                </div>

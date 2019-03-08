@@ -42,7 +42,7 @@ router.post('/c5', (req, res, next) => {
     C5.save();
   } else {    
     console.log(req.body._id);
-    formularioc5s.findByIdAndUpdate(req.body._id, { $set: req.body }, { new: true}, (err, model) => {
+    c5.findByIdAndUpdate(req.body._id, { $set: req.body }, { new: true}, (err, model) => {
       if (err) throw err;
     });
   }

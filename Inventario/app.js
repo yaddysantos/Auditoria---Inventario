@@ -9,7 +9,11 @@ var session = require('express-session');
 var passport = require('passport');
 var LocalStrategy = require('passport-local');
 var flash = require('connect-flash');
+var Handlebars = require('handlebars');
 
+// exphbs.registerHelper("checked", function (condition) {
+//      return (condition) ? checked="checked" : "";
+//  });
 
 //Iniicilizaciones
 var app = express();
@@ -66,6 +70,12 @@ app.use(require('../Inventario/routes/c3'));
 app.use(require('../Inventario/routes/c4'));
 app.use(require('../Inventario/routes/c5'));
 app.use(require('../Inventario/routes/c6'));
+app.use(require('../Inventario/routes/tabla1'));
+app.use(require('../Inventario/routes/tabla2'));
+app.use(require('../Inventario/routes/tabla3'));
+app.use(require('../Inventario/routes/tabla4'));
+app.use(require('../Inventario/routes/tabla5'));
+app.use(require('../Inventario/routes/tabla6'));
 
 //Archivos estaticos
 

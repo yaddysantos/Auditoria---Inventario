@@ -10,55 +10,60 @@
       <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
       <link href='https://fonts.googleapis.com/css?family=Abril Fatface' rel='stylesheet'>
 </head>
-
 <body>
     <div class = "contenedor">
         <header class="title">
             <div class = "col-title">
                     
-                <h3 class="text-center"> <strong>Cuestionario de control de auditoria de sistemas C5</strong></h3>
+                <h3 class="text-center"> <strong>Cuestionario de control de auditoria de sistemas C1</strong></h3>
             </div>
          </header>
-        <form action="/c5"  method="post" accept-charset="utf-8">
+        <form action="/c1"  method="post" accept-charset="utf-8">
             <div class = "form-group">
-                <input type="hidden" name="_id" value="{{auditors._id}}"/>
+                <input type="hidden" name="_id" value="{{formularioc1s._id}}">
                 <label for="inputempresa"><strong>Nombre de la empresa:</strong></label>
-                <input type="text" class="form-control" id="clientes" name="clientes" placeholder="Nombre de la empresa">   
+                <input type="text" class="form-control" id="clientes" name="clientes" placeholder="Nombre de la empresa" value="{{formularioc1s.clientes}}">   
                 <br>
-
-                <label for="dominio"><strong>Cuestionario de control respaldo eléctrico</strong></label>
-                <br>
+                
                 <label for="dominio"><strong>Dominio:</strong></label>
-                <span>Entrega de Servicios y Soportes</span>
+                <span>Adquisición e Implementación</span>
                  <br>
+                 
                 <label for="dominio"><strong>Proceso:</strong></label>
-                <span>Administración de Instalaciones</span>
+                <span>Adquirir y mantener la arquitectura tecnológica</span>
                 <br>
+                
                 <label for="dominio"><strong>Objetivo de control:</strong></label>
-                <span>Suministro Ininterrumpido de energía</span>
-        
+                <span>Evaluacion de Nuevo Hardware</span>
+            
+            {{!-- <div class= "intro-first">  
+                <p> Hola,</p>
+                <p>Por favor, invierta unos pocos minutos de su tiempo para rellenar el siguiente couestionario</p>
+            </div> --}}
+            
             <div class = "title-part">
-               <strong>¿Se cuenta con instalación con tierra física para todos los equipos?</strong>
+               <strong>¿Se cuenta con un invenatario de todos los equipos que integran el centro de cómputo?</strong>
                <div class = "radio">
                    <label >
-                       <input type="radio" name="pregunta1s" id="pregunta1s" value="1" checked="checked">
+                       <input type="radio" name="pregunta1s" id="pregunta1s" {{formularioc1s.pregunta1s}}>
                         Si.
                    </label>
                    <br>
                    <label >
-                       <input type="radio" name="pregunta1s" id="pregunta1s" value="2" checked="checked">
+                       <input type="radio" name="pregunta1s" id="pregunta1s" {{formularioc1s.pregunta1s}}>
                         No.
                    </label>
                    <br>
                    <label >
-                       <input type="radio" name="pregunta1s" id="pregunta1s" value="3" checked="checked">
+                       <input type="radio" name="pregunta1s" id="pregunta1s" {{formularioc1s.pregunta1s}}>
                         No sabe/no responde.
                    </label>
                </div>
+
             </div>
             
-            <div class = "title-part">
-               <strong>¿La instalación eléctrica se realizó específicamente para el centro de cómputo?</strong>
+             <div class = "title-part">
+               <strong>¿Se posee de bitácoras de fallas detectadas en los equipos?</strong>
                <div class = "radio">
                    <label >
                        <input type="radio" name="pregunta2s" id="pregunta2s" value="1" checked="checked">
@@ -75,10 +80,11 @@
                         No sabe/no responde.
                    </label>
                </div>
+
             </div>
 
               <div class = "title-part">
-               <strong>¿Se cuenta con otra instalación dentro el centro de cómputo diferente de la que alimenta a los equipos de cómputo?</strong>
+               <strong>¿Con cuanta frecuencia se revisa el inventario?</strong>
                <div class = "radio">
                    <label >
                        <input type="radio" name="pregunta3s" id="pregunta3s" value="1" checked="checked">
@@ -95,10 +101,11 @@
                         No sabe/no responde.
                    </label>
                </div>
+
             </div>
 
             <div class = "title-part">
-               <strong>¿La acometida llega a un tablero de distribucción?</strong>
+               <strong>¿La bitácora es llenada por el personal especializado?</strong>
                <div class = "radio">
                    <label >
                        <input type="radio" name="pregunta4s" id="pregunta4s" value="1" checked="checked">
@@ -117,8 +124,33 @@
                </div>
             </div>
 
-            <div class = "title-part">
-               <strong>¿El tablero considera espacio para futuras ampliaciones de hasta un 30% (considerando que se dispone de espacio físico para la instalación de mas equipos)?</strong>
+            <div class = "col-title">
+                    
+                <h3 class="text-center"> <strong>Caracteristicas de la bitocara (Señala las opciones)</strong></h3>
+            </div>
+
+              {{!-- <div class = "title-part">
+               <strong>¿La bitácora es llenada por el personal especializado?</strong>
+               <div class = "radio">
+                   <label >
+                       <input type="radio" name="pregunta6s" id="pregunta6s" value="1" checked="checked">
+                        Si.
+                   </label>
+                   <br>
+                   <label >
+                       <input type="radio" name="pregunta6s" id="pregunta6s" value="2" checked="checked">
+                        No.
+                   </label>
+                   <br>
+                   <label >
+                       <input type="radio" name="pregunta6s" id="pregunta6s" value="3" checked="checked">
+                        No sabe/no responde.
+                   </label>
+               </div>
+            </div> --}}
+
+              <div class = "title-part">
+               <strong>¿Señala fecha de detección de la falla?</strong>
                <div class = "radio">
                    <label >
                        <input type="radio" name="pregunta5s" id="pregunta5s" value="1" checked="checked">
@@ -138,7 +170,7 @@
             </div>
 
             <div class = "title-part">
-               <strong>¿La instalación es independiente para el centro de computo?</strong>
+               <strong>¿Señala fecha de corrección de la falla y revisión de que el equipo funcione correctamente?</strong>
                <div class = "radio">
                    <label >
                        <input type="radio" name="pregunta6s" id="pregunta6s" value="1" checked="checked">
@@ -157,8 +189,9 @@
                </div>
             </div>
 
+            
             <div class = "title-part">
-               <strong>¿La misma instalación con tierra física se ocupa en otras partes del edificio?</strong>
+               <strong>¿Se poseen registros individuales de los equipos?</strong>
                <div class = "radio">
                    <label >
                        <input type="radio" name="pregunta7s" id="pregunta7s" value="1" checked="checked">
@@ -176,9 +209,9 @@
                    </label>
                </div>
             </div>
-            
+
             <div class = "title-part">
-               <strong>¿La iluminación está alimentada de la misma acometida que los equipos?</strong>
+               <strong>¿La bitácora hace referencia a hojas de servicio, en donde se detalla la falla, y las causas que la orginaron, asi como las refacciones utilizadas?</strong>
                <div class = "radio">
                    <label >
                        <input type="radio" name="pregunta8s" id="pregunta8s" value="1" checked="checked">
@@ -197,8 +230,8 @@
                </div>
             </div>
 
-            <div class = "title-part">
-               <strong>¿Las reactancias (balastros de las lámparas) están ubicadas dentro de la sala?</strong>
+        <div class = "title-part">
+               <strong>¿Se lleva un control de los equipos en garantía, para que a la finalización de ésta, se integren a algún programa de mantenimiento?</strong>
                <div class = "radio">
                    <label >
                        <input type="radio" name="pregunta9s" id="pregunta9s" value="1" checked="checked">
@@ -217,8 +250,8 @@
                </div>
             </div>
 
-            <div class = "title-part">
-               <strong>¿Los ventiladores y aire acondicionado están conectados en la misma instalación de los equipos a la planta de emergencia?</strong>
+              <div class = "title-part">
+               <strong>¿Se cuenta con servicio de mantenimiento para todos los equipos?</strong>
                <div class = "radio">
                    <label >
                        <input type="radio" name="pregunta10s" id="pregunta10s" value="1" checked="checked">
@@ -237,8 +270,8 @@
                </div>
             </div>
 
-            <div class = "title-part">
-               <strong>¿Los ventiladores y aire acondicionado están conectados en la misma instalación de los equipos a los no-break?</strong>
+                  <div class = "title-part">
+               <strong>¿Con cuanta frecuencia se realiza mantenimiento a los equipos?</strong>
                <div class = "radio">
                    <label >
                        <input type="radio" name="pregunta11s" id="pregunta11s" value="1" checked="checked">
@@ -257,8 +290,8 @@
                </div>
             </div>
 
-            <div class = "title-part">
-               <strong>¿Se cuenta con interruptores generales?</strong>
+                <div class = "title-part">
+               <strong>¿Se cuenta con procedimientos definidos para la adquisición de nuevos equipos?</strong>
                <div class = "radio">
                    <label >
                        <input type="radio" name="pregunta12s" id="pregunta12s" value="1" checked="checked">
@@ -277,8 +310,8 @@
                </div>
             </div>
 
-            <div class = "title-part">
-               <strong>¿Se cuenta con interruptores de emergencia en seie al interruptor general?</strong>
+               <div class = "title-part">
+               <strong>¿Se tienen criterios de evaluación para determinar el rendimiento de los equipos a adquirir y así elegir el mejor?</strong>
                <div class = "radio">
                    <label >
                        <input type="radio" name="pregunta13s" id="pregunta13s" value="1" checked="checked">
@@ -296,130 +329,10 @@
                    </label>
                </div>
             </div>
-
-            <div class = "title-part">
-               <strong>¿Se tienen los interruptores rotulados adecuadamente?</strong>
-               <div class = "radio">
-                   <label >
-                       <input type="radio" name="pregunta14s" id="pregunta14s" value="1" checked="checked">
-                        Si.
-                   </label>
-                   <br>
-                   <label >
-                       <input type="radio" name="pregunta14s" id="pregunta14s" value="2" checked="checked">
-                        No.
-                   </label>
-                   <br>
-                   <label >
-                       <input type="radio" name="pregunta14s" id="pregunta14s" value="3" checked="checked">
-                        No sabe/no responde.
-                   </label>
-               </div>
-            </div>
-
-            <div class = "title-part">
-               <strong>¿Se tienen protecciones contra corto circuito?</strong>
-               <div class = "radio">
-                   <label >
-                       <input type="radio" name="pregunta15s" id="pregunta15s" value="1" checked="checked">
-                        Si.
-                   </label>
-                   <br>
-                   <label >
-                       <input type="radio" name="pregunta15s" id="pregunta15s" value="2" checked="checked">
-                        No.
-                   </label>
-                   <br>
-                   <label >
-                       <input type="radio" name="pregunta15s" id="pregunta15s" value="3" checked="checked">
-                        No sabe/no responde.
-                   </label>
-               </div>
-            </div>
-
-            <div class = "title-part">
-               <strong>¿Se tiene implementado algún tipo de equipo de energía auxiliar?</strong>
-               <div class = "radio">
-                   <label >
-                       <input type="radio" name="pregunta16s" id="pregunta16s" value="1" checked="checked">
-                        Si.
-                   </label>
-                   <br>
-                   <label >
-                       <input type="radio" name="pregunta16s" id="pregunta16s" value="2" checked="checked">
-                        No.
-                   </label>
-                   <br>
-                   <label >
-                       <input type="radio" name="pregunta16s" id="pregunta16s" value="3" checked="checked">
-                        No sabe/no responde.
-                   </label>
-               </div>
-            </div>
-
-            <div class = "title-part">
-               <strong>¿Se cuenta con planta de emergencia?</strong>
-               <div class = "radio">
-                   <label >
-                       <input type="radio" name="pregunta17s" id="pregunta17s" value="1" checked="checked">
-                        Si.
-                   </label>
-                   <br>
-                   <label >
-                       <input type="radio" name="pregunta17s" id="pregunta17s" value="2" checked="checked">
-                        No.
-                   </label>
-                   <br>
-                   <label >
-                       <input type="radio" name="pregunta17s" id="pregunta17s" value="3" checked="checked">
-                        No sabe/no responde.
-                   </label>
-               </div>
-            </div>
-
-            <div class = "title-part">
-               <strong>¿se tienen conectadas algunas lámparas del centro de cómputo a la planta de emergencia?</strong>
-               <div class = "radio">
-                   <label >
-                       <input type="radio" name="pregunta18s" id="pregunta18s" value="1" checked="checked">
-                        Si.
-                   </label>
-                   <br>
-                   <label >
-                       <input type="radio" name="pregunta18s" id="pregunta18s" value="2" checked="checked">
-                        No.
-                   </label>
-                   <br>
-                   <label >
-                       <input type="radio" name="pregunta18s" id="pregunta18s" value="3" checked="checked">
-                        No sabe/no responde.
-                   </label>
-               </div>
-            </div>
-
-            <div class = "title-part">
-               <strong>¿Que porcentaje de lámparas: % están conectadas a la planta de emergencia (recomendalcle el 25%?</strong>
-               <div class = "radio">
-                   <label >
-                       <input type="radio" name="pregunta19s" id="pregunta19s" value="1" checked="checked">
-                        Si.
-                   </label>
-                   <br>
-                   <label >
-                       <input type="radio" name="pregunta19s" id="pregunta19s" value="2" checked="checked">
-                        No.
-                   </label>
-                   <br>
-                   <label >
-                       <input type="radio" name="pregunta19s" id="pregunta19s" value="3" checked="checked">
-                        No sabe/no responde.
-                   </label>
-               </div>
-            </div>
-
         <div class = "form-group">
           <label for="inputempresa"><strong>Documentos probatorios:</strong></label>
-            <input type="text" class="form-control" name="docs" id="docs" placeholder="Digite su respuesta">   
+            <input type="text" class="form-control" name="docs" id="docs" value="{{formularioc1s.docs}}">   
+
         </div>
 
         <div class = "form-group">
@@ -427,17 +340,17 @@
           <div class="row jistify-content-center">
               <div class="col-ms-3">
                   <label for="inputempresa"><strong>Conteo del si:</strong></label>
-                  <input type="text" class="form-control" name="totalss" id="totalss" placeholder="Digite su respuesta" >
+                  <input type="text" class="form-control" name="totalss" id="totalss" value="{{formularioc1s.totalss}}" >
               </div>
               <div class="col-ms-2"> </div>
               <div class="col-ms-3">
                   <label for="inputempresa"><strong>Conteo del no:</strong></label>
-                  <input type="text" class="form-control" name="totalns" id="totalns" placeholder="Digite su respuesta" >
+                  <input type="text" class="form-control" name="totalns" id="totalns" value="{{formularioc1s.totalns}}" >
               </div>
               <div class="col-ms-2"> </div>
               <div class="col-ms-3">
                   <label for="inputempresa"><strong>Conteo del N/S</strong></label>
-                  <input type="text" class="form-control" name="totalnss" id="totalnss" placeholder="Digite su respuesta" >
+                  <input type="text" class="form-control" name="totalnss" id="totalnss" value="{{formularioc1s.totalnss}}" >
 
               </div>
           </div>
@@ -448,7 +361,13 @@
                 <button type="submit" class="btn btn-login center">Enviar</button>
             </div>
         </div>
-        </div>    
+        </div>
+
+    </div>
+        
+            
+
+            
         </form>
     </div>
 </body>

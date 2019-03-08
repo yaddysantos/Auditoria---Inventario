@@ -29,7 +29,7 @@ router.post('/c6', (req, res, next) => {
     C6.save();
   } else {    
     console.log(req.body._id);
-    formularioc6s.findByIdAndUpdate(req.body._id, { $set: req.body }, { new: true}, (err, model) => {
+    c6.findByIdAndUpdate(req.body._id, { $set: req.body }, { new: true}, (err, model) => {
       if (err) throw err;
     });
   }

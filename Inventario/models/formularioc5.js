@@ -30,3 +30,5 @@ let formularioc5Schema = new Schema({
 }, {versionKey: false});
 
 let formularioc5 = mongoose.model('formularioc5s', formularioc5Schema);
+
+module.exports = formularioc5;

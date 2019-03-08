@@ -18,6 +18,28 @@ router.post('/login', passport.authenticate('local', {
      failureFlash: true
 }));
 
+router.get('/auditort', (req, res,next) =>{
+     auditor.find((err, auditors) =>{
+          if(err) throw err;
+          res.render('auditor/auditort', {auditors: auditors});
+     });
+});
+
+router.get('/modificar/:id', (req, res, next) =>{
+     let idauditor = req.params.id;
+     auditor.findOne({_id: idauditor}, (err, auditors) =>{
+          if(err) throw err;
+          res.render('auditor/nuevoa', {auditors: auditors})
+     });
+});
+
+router.get('/eliminar/:id', (req, res, next) =>{
+     let idauditor = req.params.id;
+     auditor.remove({_id: idauditor}, (err) =>{
+          res.redirect('/auditort');
+     })
+})
+
 router.post('/operar', (req, res, next) => {
 console.log(req.body);  
 
@@ -33,11 +55,11 @@ if (req.body._id === "") {
      au.save();
 } else {    
      console.log(req.body._id);
-     auditors.findByIdAndUpdate(req.body._id, { $set: req.body }, { new: true}, (err, model) => {
+     auditor.findByIdAndUpdate(req.body._id, { $set: req.body }, { new: true}, (err, model) => {
      if (err) throw err;
      });
 }
-res.redirect('/Login');
+res.redirect('/auditort');
 });
    
 module.exports = router;
