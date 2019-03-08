@@ -1,7 +1,7 @@
 .contenedor{
     margin: 1rem;
     padding: 1rem;
-    border: 2px solid #12919c;
+    border: 7px solid #818181;
 }
 .text-center{
     background-color: #fafafa;
@@ -10,8 +10,9 @@
  
      /* IMPORTANTE */
     text-align: center;
-    font-family: 'Antic';font-size: 22px;
-    font-size: 30px;
+    font-family: 'Andika';font-size: 22px;
+    font-size: 40px;
+    
     
 }
 .intro-first{
@@ -23,8 +24,8 @@
 .form-group{
     margin: 1rem;
     padding: 2em;
-    border: 2px solid #00b2cc;
-    font-family: 'Antic';font-size: 22px;
+    border: 5px solid #DAD8D8;
+    font-family: 'Andika';font-size: 22px;
     text-align: justify;
 }
 .title-part{
@@ -37,7 +38,12 @@
 
     text-align: justify;
 
-    border: 2px solid #0bcad1;
-    font-family: 'Antic';font-size: 22px;
+    border: 5px solid #D2D3E0;
+    font-family: 'Andika';font-size: 22px;
     
 }
+.col-ms-3{
+    padding-right: 20px;
+}
+
+
