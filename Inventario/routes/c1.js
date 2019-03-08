@@ -7,6 +7,15 @@ router.get('/c1', (req, res,next) =>{
      res.render('auditor/C1', {});
 });
 
+var Handlebars = require('handlebars');
+  Handlebars.registerHelper('if_eq', function(a, b, opts) {
+      if (a == b) {
+          return opts.fn(this);
+      } else {
+          return opts.inverse(this);
+      }
+});
+
 //registrat el formulario
 router.post('/c1', (req, res, next) => {
   console.log(req.body);  

@@ -24,7 +24,7 @@
             <div class = "form-group">
                 <input type="hidden" name="_id" value="{{formularioc1s._id}}"/>
                 <label for="inputempresa"><strong>Nombre de la empresa:</strong></label>
-                <input type="text" class="form-control" id="clientes" name="clientes" placeholder="Nombre de la empresa">   
+                <input type="text" class="form-control" id="clientes" name="clientes" value="{{formularioc1s.clientes}}" placeholder="Nombre de la empresa">   
                 <br>
                 
                 <label for="dominio"><strong>Dominio:</strong></label>
@@ -48,18 +48,27 @@
                <div class = "radio">
                   
                    <label >
-                       <input  type="radio"  name="pregunta1s" id="pregunta1s" value="1" value="{{formularioc1s.pregunta1s}}">
+                       <input  type="radio"  name="pregunta1s" id="pregunta1s" value="1" 
+                       {{#if_eq formularioc1s.pregunta1s "1"}}
+                       checked
+                       {{/if_eq}}>
                         Si.
                    </label>
                   
                    <br>
                    <label >
-                       <input type="radio" name="pregunta1s" id="pregunta1s" value="2" value="{{formularioc1s.pregunta1s}}">
+                       <input type="radio" name="pregunta1s" id="pregunta1s" value="2" 
+                       {{#if_eq formularioc1s.pregunta1s "2"}}
+                       checked
+                       {{/if_eq}}>
                         No.
                    </label>
                    <br>
                    <label >
-                       <input type="radio" name="pregunta1s" id="pregunta1s" value="3" value="{{formularioc1s.pregunta1s}}">
+                       <input type="radio" name="pregunta1s" id="pregunta1s" value="3" 
+                       {{#if_eq formularioc1s.pregunta1s "3"}}
+                       checked
+                       {{/if_eq}}>
                         No sabe/no responde.
                    </label>
                </div>
@@ -70,17 +79,26 @@
                <strong>¿Se posee de bitácoras de fallas detectadas en los equipos?</strong>
                <div class = "radio">
                    <label >
-                       <input type="radio" name="pregunta2s" id="pregunta2s" value="1">
+                       <input type="radio" name="pregunta2s" id="pregunta2s" value="1"
+                       {{#if_eq formularioc1s.pregunta2s "1"}}
+                       checked
+                       {{/if_eq}}>
                         Si.
                    </label>
                    <br>
                    <label >
-                       <input type="radio" name="pregunta2s" id="pregunta2s" value="2">
+                       <input type="radio" name="pregunta2s" id="pregunta2s" value="2"
+                       {{#if_eq formularioc1s.pregunta2s "2"}}
+                       checked
+                       {{/if_eq}}>
                         No.
                    </label>
                    <br>
                    <label >
-                       <input type="radio" name="pregunta2s" id="pregunta2s" value="3">
+                       <input type="radio" name="pregunta2s" id="pregunta2s" value="3"
+                       {{#if_eq formularioc1s.pregunta2s "3"}}
+                       checked
+                       {{/if_eq}}>
                         No sabe/no responde.
                    </label>
                </div>
@@ -91,17 +109,26 @@
                <strong>¿Con cuanta frecuencia se revisa el inventario?</strong>
                <div class = "radio">
                    <label >
-                       <input type="radio" name="pregunta3s" id="pregunta3s" value="1">
+                       <input type="radio" name="pregunta3s" id="pregunta3s" value="1"
+                       {{#if_eq formularioc1s.pregunta3s "1"}}
+                       checked
+                       {{/if_eq}}>
                         Si.
                    </label>
                    <br>
                    <label >
-                       <input type="radio" name="pregunta3s" id="pregunta3s" value="2">
+                       <input type="radio" name="pregunta3s" id="pregunta3s" value="2"
+                       {{#if_eq formularioc1s.pregunta3s "2"}}
+                       checked
+                       {{/if_eq}}>
                         No.
                    </label>
                    <br>
                    <label >
-                       <input type="radio" name="pregunta3s" id="pregunta3s" value="3">
+                       <input type="radio" name="pregunta3s" id="pregunta3s" value="3"
+                       {{#if_eq formularioc1s.pregunta3s "3"}}
+                       checked
+                       {{/if_eq}}>
                         No sabe/no responde.
                    </label>
                </div>
@@ -112,17 +139,26 @@
                <strong>¿La bitácora es llenada por el personal especializado?</strong>
                <div class = "radio">
                    <label >
-                       <input type="radio" name="pregunta4s" id="pregunta4s" value="1">
+                       <input type="radio" name="pregunta4s" id="pregunta4s" value="1"
+                       {{#if_eq formularioc1s.pregunta4s "1"}}
+                       checked
+                       {{/if_eq}}>
                         Si.
                    </label>
                    <br>
                    <label >
-                       <input type="radio" name="pregunta4s" id="pregunta4s" value="2">
+                       <input type="radio" name="pregunta4s" id="pregunta4s" value="2"
+                       {{#if_eq formularioc1s.pregunta4s "2"}}
+                       checked
+                       {{/if_eq}}>
                         No.
                    </label>
                    <br>
                    <label >
-                       <input type="radio" name="pregunta4s" id="pregunta4s" value="3">
+                       <input type="radio" name="pregunta4s" id="pregunta4s" value="3"
+                       {{#if_eq formularioc1s.pregunta4s "3"}}
+                       checked
+                       {{/if_eq}}>
                         No sabe/no responde.
                    </label>
                </div>
@@ -157,17 +193,26 @@
                <strong>¿Señala fecha de detección de la falla?</strong>
                <div class = "radio">
                    <label >
-                       <input type="radio" name="pregunta5s" id="pregunta5s" value="1">
+                       <input type="radio" name="pregunta5s" id="pregunta5s" value="1"
+                       {{#if_eq formularioc1s.pregunta5s "1"}}
+                       checked
+                       {{/if_eq}}>
                         Si.
                    </label>
                    <br>
                    <label >
-                       <input type="radio" name="pregunta5s" id="pregunta5s" value="2">
+                       <input type="radio" name="pregunta5s" id="pregunta5s" value="2"
+                       {{#if_eq formularioc1s.pregunta5s "2"}}
+                       checked
+                       {{/if_eq}}>
                         No.
                    </label>
                    <br>
                    <label >
-                       <input type="radio" name="pregunta5s" id="pregunta5s" value="3">
+                       <input type="radio" name="pregunta5s" id="pregunta5s" value="3"
+                       {{#if_eq formularioc1s.pregunta5s "3"}}
+                       checked
+                       {{/if_eq}}>
                         No sabe/no responde.
                    </label>
                </div>
@@ -177,17 +222,26 @@
                <strong>¿Señala fecha de corrección de la falla y revisión de que el equipo funcione correctamente?</strong>
                <div class = "radio">
                    <label >
-                       <input type="radio" name="pregunta6s" id="pregunta6s" value="1">
+                       <input type="radio" name="pregunta6s" id="pregunta6s" value="1"
+                       {{#if_eq formularioc1s.pregunta6s "1"}}
+                       checked
+                       {{/if_eq}}>
                         Si.
                    </label>
                    <br>
                    <label >
-                       <input type="radio" name="pregunta6s" id="pregunta6s" value="2">
+                       <input type="radio" name="pregunta6s" id="pregunta6s" value="2"
+                       {{#if_eq formularioc1s.pregunta6s "2"}}
+                       checked
+                       {{/if_eq}}>
                         No.
                    </label>
                    <br>
                    <label >
-                       <input type="radio" name="pregunta6s" id="pregunta6s" value="3">
+                       <input type="radio" name="pregunta6s" id="pregunta6s" value="3"
+                       {{#if_eq formularioc1s.pregunta6s "3"}}
+                       checked
+                       {{/if_eq}}>
                         No sabe/no responde.
                    </label>
                </div>
@@ -198,17 +252,26 @@
                <strong>¿Se poseen registros individuales de los equipos?</strong>
                <div class = "radio">
                    <label >
-                       <input type="radio" name="pregunta7s" id="pregunta7s" value="1">
+                       <input type="radio" name="pregunta7s" id="pregunta7s" value="1"
+                       {{#if_eq formularioc1s.pregunta7s "1"}}
+                       checked
+                       {{/if_eq}}>
                         Si.
                    </label>
                    <br>
                    <label >
-                       <input type="radio" name="pregunta7s" id="pregunta7s" value="2">
+                       <input type="radio" name="pregunta7s" id="pregunta7s" value="2"
+                       {{#if_eq formularioc1s.pregunta7s "2"}}
+                       checked
+                       {{/if_eq}}>
                         No.
                    </label>
                    <br>
                    <label >
-                       <input type="radio" name="pregunta7s" id="pregunta7s" value="3">
+                       <input type="radio" name="pregunta7s" id="pregunta7s" value="3"
+                       {{#if_eq formularioc1s.pregunta7s "3"}}
+                       checked
+                       {{/if_eq}}>
                         No sabe/no responde.
                    </label>
                </div>
@@ -218,17 +281,26 @@
                <strong>¿La bitácora hace referencia a hojas de servicio, en donde se detalla la falla, y las causas que la orginaron, asi como las refacciones utilizadas?</strong>
                <div class = "radio">
                    <label >
-                       <input type="radio" name="pregunta8s" id="pregunta8s" value="1">
+                       <input type="radio" name="pregunta8s" id="pregunta8s" value="1"
+                       {{#if_eq formularioc1s.pregunta8s "1"}}
+                       checked
+                       {{/if_eq}}>
                         Si.
                    </label>
                    <br>
                    <label >
-                       <input type="radio" name="pregunta8s" id="pregunta8s" value="2">
+                       <input type="radio" name="pregunta8s" id="pregunta8s" value="2"
+                       {{#if_eq formularioc1s.pregunta8s "2"}}
+                       checked
+                       {{/if_eq}}>
                         No.
                    </label>
                    <br>
                    <label >
-                       <input type="radio" name="pregunta8s" id="pregunta8s" value="3">
+                       <input type="radio" name="pregunta8s" id="pregunta8s" value="3"
+                       {{#if_eq formularioc1s.pregunta8s "3"}}
+                       checked
+                       {{/if_eq}}>
                         No sabe/no responde.
                    </label>
                </div>
@@ -238,17 +310,26 @@
                <strong>¿Se lleva un control de los equipos en garantía, para que a la finalización de ésta, se integren a algún programa de mantenimiento?</strong>
                <div class = "radio">
                    <label >
-                       <input type="radio" name="pregunta9s" id="pregunta9s" value="1">
+                       <input type="radio" name="pregunta9s" id="pregunta9s" value="1"
+                       {{#if_eq formularioc1s.pregunta9s "1"}}
+                       checked
+                       {{/if_eq}}>
                         Si.
                    </label>
                    <br>
                    <label >
-                       <input type="radio" name="pregunta9s" id="pregunta9s" value="2">
+                       <input type="radio" name="pregunta9s" id="pregunta9s" value="2"
+                       {{#if_eq formularioc1s.pregunta9s "2"}}
+                       checked
+                       {{/if_eq}}>
                         No.
                    </label>
                    <br>
                    <label >
-                       <input type="radio" name="pregunta9s" id="pregunta9s" value="3">
+                       <input type="radio" name="pregunta9s" id="pregunta9s" value="3"
+                       {{#if_eq formularioc1s.pregunta9s "3"}}
+                       checked
+                       {{/if_eq}}>
                         No sabe/no responde.
                    </label>
                </div>
@@ -258,17 +339,26 @@
                <strong>¿Se cuenta con servicio de mantenimiento para todos los equipos?</strong>
                <div class = "radio">
                    <label >
-                       <input type="radio" name="pregunta10s" id="pregunta10s" value="1">
+                       <input type="radio" name="pregunta10s" id="pregunta10s" value="1"
+                       {{#if_eq formularioc1s.pregunta10s "1"}}
+                       checked
+                       {{/if_eq}}>
                         Si.
                    </label>
                    <br>
                    <label >
-                       <input type="radio" name="pregunta10s" id="pregunta10s" value="2">
+                       <input type="radio" name="pregunta10s" id="pregunta10s" value="2"
+                       {{#if_eq formularioc1s.pregunta10s "2"}}
+                       checked
+                       {{/if_eq}}>
                         No.
                    </label>
                    <br>
                    <label >
-                       <input type="radio" name="pregunta10s" id="pregunta10s" value="3">
+                       <input type="radio" name="pregunta10s" id="pregunta10s" value="3"
+                       {{#if_eq formularioc1s.pregunta10s "3"}}
+                       checked
+                       {{/if_eq}}>
                         No sabe/no responde.
                    </label>
                </div>
@@ -278,17 +368,26 @@
                <strong>¿Con cuanta frecuencia se realiza mantenimiento a los equipos?</strong>
                <div class = "radio">
                    <label >
-                       <input type="radio" name="pregunta11s" id="pregunta11s" value="1">
+                       <input type="radio" name="pregunta11s" id="pregunta11s" value="1"
+                       {{#if_eq formularioc1s.pregunta11s "1"}}
+                       checked
+                       {{/if_eq}}>
                         Si.
                    </label>
                    <br>
                    <label >
-                       <input type="radio" name="pregunta11s" id="pregunta11s" value="2">
+                       <input type="radio" name="pregunta11s" id="pregunta11s" value="2"
+                       {{#if_eq formularioc1s.pregunta11s "2"}}
+                       checked
+                       {{/if_eq}}>
                         No.
                    </label>
                    <br>
                    <label >
-                       <input type="radio" name="pregunta11s" id="pregunta11s" value="3">
+                       <input type="radio" name="pregunta11s" id="pregunta11s" value="3"
+                       {{#if_eq formularioc1s.pregunta11s "3"}}
+                       checked
+                       {{/if_eq}}>
                         No sabe/no responde.
                    </label>
                </div>
@@ -298,17 +397,26 @@
                <strong>¿Se cuenta con procedimientos definidos para la adquisición de nuevos equipos?</strong>
                <div class = "radio">
                    <label >
-                       <input type="radio" name="pregunta12s" id="pregunta12s" value="1">
+                       <input type="radio" name="pregunta12s" id="pregunta12s" value="1"
+                       {{#if_eq formularioc1s.pregunta12s "1"}}
+                       checked
+                       {{/if_eq}}>
                         Si.
                    </label>
                    <br>
                    <label >
-                       <input type="radio" name="pregunta12s" id="pregunta12s" value="2">
+                       <input type="radio" name="pregunta12s" id="pregunta12s" value="2"
+                       {{#if_eq formularioc1s.pregunta12s "2"}}
+                       checked
+                       {{/if_eq}}>
                         No.
                    </label>
                    <br>
                    <label >
-                       <input type="radio" name="pregunta12s" id="pregunta12s" value="3">
+                       <input type="radio" name="pregunta12s" id="pregunta12s" value="3"
+                       {{#if_eq formularioc1s.pregunta12s "3"}}
+                       checked
+                       {{/if_eq}}>
                         No sabe/no responde.
                    </label>
                </div>
@@ -318,24 +426,33 @@
                <strong>¿Se tienen criterios de evaluación para determinar el rendimiento de los equipos a adquirir y así elegir el mejor?</strong>
                <div class = "radio">
                    <label >
-                       <input type="radio" name="pregunta13s" id="pregunta13s" value="1">
+                       <input type="radio" name="pregunta13s" id="pregunta13s" value="1"
+                       {{#if_eq formularioc1s.pregunta13s "1"}}
+                       checked
+                       {{/if_eq}}>
                         Si.
                    </label>
                    <br>
                    <label >
-                       <input type="radio" name="pregunta13s" id="pregunta13s" value="2">
+                       <input type="radio" name="pregunta13s" id="pregunta13s" value="2"
+                       {{#if_eq formularioc1s.pregunta13s "2"}}
+                       checked
+                       {{/if_eq}}>
                         No.
                    </label>
                    <br>
                    <label >
-                       <input type="radio" name="pregunta13s" id="pregunta13s" value="3">
+                       <input type="radio" name="pregunta13s" id="pregunta13s" value="3"
+                       {{#if_eq formularioc1s.pregunta13s "3"}}
+                       checked
+                       {{/if_eq}}>
                         No sabe/no responde.
                    </label>
                </div>
             </div>
         <div class = "form-group">
           <label for="inputempresa"><strong>Documentos probatorios:</strong></label>
-            <input type="text" class="form-control" name="docs" id="docs" placeholder="Digite su respuesta">   
+            <input type="text" class="form-control" name="docs" id="docs" value="{{formularioc1s.docs}}" placeholder="Digite su respuesta">   
 
         </div>
 
@@ -344,17 +461,17 @@
           <div class="row jistify-content-center">
               <div class="col-ms-3">
                   <label for="inputempresa"><strong>Conteo del si:</strong></label>
-                  <input type="text" class="form-control" name="totalss" id="totalss" placeholder="Digite su respuesta" >
+                  <input type="text" class="form-control" name="totalss" value="{{formularioc1s.totalss}}" id="totalss" placeholder="Digite su respuesta" >
               </div>
               <div class="col-ms-2"> </div>
               <div class="col-ms-3">
                   <label for="inputempresa"><strong>Conteo del no:</strong></label>
-                  <input type="text" class="form-control" name="totalns" id="totalns" placeholder="Digite su respuesta" >
+                  <input type="text" class="form-control" name="totalns" id="totalns" value="{{formularioc1s.totalns}}" placeholder="Digite su respuesta" >
               </div>
               <div class="col-ms-2"> </div>
               <div class="col-ms-3">
                   <label for="inputempresa"><strong>Conteo del N/S</strong></label>
-                  <input type="text" class="form-control" name="totalnss" id="totalnss" placeholder="Digite su respuesta" >
+                  <input type="text" class="form-control" name="totalnss" id="totalnss" value="{{formularioc1s.totalnss}}" placeholder="Digite su respuesta" >
 
               </div>
           </div>
@@ -362,7 +479,7 @@
         
         <div class="row justify-content-center">
             <div class="col-ms-10">
-                <button type="button" class="btn btn-lg btn-primary" >Guardar Cambios</button>
+                <button type="submit" class="btn btn-lg btn-primary" >Guardar Cambios</button>
                 <button type="button" class="btn btn-default btn-lg" >Cancelar</button>
             </div>
         </div>

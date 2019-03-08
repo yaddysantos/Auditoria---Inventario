@@ -16,7 +16,7 @@ router.get('/tabla2/modificar/:id', (req, res, next) =>{
      let idformulario2 = req.params.id;
      formulario2.findOne({_id: idformulario2}, (err, formularioc2s) =>{
           if(err) throw err;
-          res.render('auditor/C2editado', {formularioc2s: formularioc2s})
+          res.render('auditor/C2', {formularioc2s: formularioc2s})
      });
 });
 
