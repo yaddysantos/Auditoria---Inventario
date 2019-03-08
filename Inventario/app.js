@@ -62,10 +62,10 @@ app.use(require('../Inventario/routes/registro'));
 app.use(require('../Inventario/routes/cliente'));
 app.use(require('../Inventario/routes/c1'));
 app.use(require('../Inventario/routes/c2'));
-// app.use(require('../Inventario/routes/c3'));
-// app.use(require('../Inventario/routes/c4'));
-// app.use(require('../Inventario/routes/c5'));
-// app.use(require('../Inventario/routes/c6'));
+app.use(require('../Inventario/routes/c3'));
+app.use(require('../Inventario/routes/c4'));
+app.use(require('../Inventario/routes/c5'));
+app.use(require('../Inventario/routes/c6'));
 
 //Archivos estaticos
 

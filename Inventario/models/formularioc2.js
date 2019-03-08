@@ -8,10 +8,10 @@ let formularioc2Schema = new Schema({
      pregunta3s: {type: Number, max:3 },
      pregunta4s: {type: Number, max:3 },
      pregunta5s: {type: Number, max:3 },
-     doc: {type: Number},
-     totals: {type: Number},
-     totaln: {type: Number},
-     totalns: {type: Number}
+     docs: {type: Number},
+     totalss: {type: Number},
+     totalns: {type: Number},
+     totalnss: {type: Number}
 }, {versionKey: false});
 
 let formularioc2 = mongoose.model('formularioc2s', formularioc2Schema);
