@@ -60,6 +60,7 @@ app.use((req, res, next) =>{
 app.use(require('../Inventario/routes/index'));
 app.use(require('../Inventario/routes/registro'));
 app.use(require('../Inventario/routes/cliente'));
+app.use(require('../Inventario/routes/c1'));
 
 //Archivos estaticos
 

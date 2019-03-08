@@ -5,9 +5,9 @@ router.get('/', (req, res,next) =>{
      res.render('index');
 });
 
-router.get('/formulario/c1', (req, res,next) =>{
-     res.render('auditor/C1', {});
-});
+// router.get('/formulario/c1', (req, res,next) =>{
+//      res.render('auditor/C1', {});
+// });
 
 router.get('/formulario/c2', (req, res,next) =>{
      res.render('auditor/C2', {});

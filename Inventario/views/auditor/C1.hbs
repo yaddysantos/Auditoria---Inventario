@@ -19,11 +19,11 @@
                 <h3 class="text-center"> <strong>Cuestionario de control de auditoria de sistemas C1</strong></h3>
             </div>
          </header>
-        <form action=""  method="post" accept-charset="utf-8">
+        <form action="/c1"  method="post" accept-charset="utf-8">
             <div class = "form-group">
-                
+                <input type="hidden" name="_id" value="{{auditors._id}}"/>
                 <label for="inputempresa"><strong>Nombre de la empresa:</strong></label>
-                <input type="text" class="form-control" id="inputempresa" placeholder="Nombre de la empresa">   
+                <input type="text" class="form-control" id="clientes" name="clientes" placeholder="Nombre de la empresa">   
                 <br>
                 
                 <label for="dominio"><strong>Dominio:</strong></label>
@@ -46,17 +46,17 @@
                <strong>¿Se cuenta con un invenatario de todos los equipos que integran el centro de cómputo?</strong>
                <div class = "radio">
                    <label >
-                       <input type="radio" name="optionRadios" id="optionsRadios1" value="option1" checked="checked">
+                       <input type="radio" name="pregunta1s" id="pregunta1s" value="1" checked="checked">
                         Si.
                    </label>
                    <br>
                    <label >
-                       <input type="radio" name="optionRadios" id="optionsRadios1" value="option1" checked="checked">
+                       <input type="radio" name="pregunta1s" id="pregunta1s" value="2" checked="checked">
                         No.
                    </label>
                    <br>
                    <label >
-                       <input type="radio" name="optionRadios" id="optionsRadios1" value="option1" checked="checked">
+                       <input type="radio" name="pregunta1s" id="pregunta1s" value="3" checked="checked">
                         No sabe/no responde.
                    </label>
                </div>
@@ -67,17 +67,17 @@
                <strong>¿Se posee de bitácoras de fallas detectadas en los equipos?</strong>
                <div class = "radio">
                    <label >
-                       <input type="radio" name="optionRadios" id="optionsRadios1" value="option1" checked="checked">
+                       <input type="radio" name="pregunta2s" id="pregunta2s" value="1" checked="checked">
                         Si.
                    </label>
                    <br>
                    <label >
-                       <input type="radio" name="optionRadios" id="optionsRadios1" value="option1" checked="checked">
+                       <input type="radio" name="pregunta2s" id="pregunta2s" value="2" checked="checked">
                         No.
                    </label>
                    <br>
                    <label >
-                       <input type="radio" name="optionRadios" id="optionsRadios1" value="option1" checked="checked">
+                       <input type="radio" name="pregunta2s" id="pregunta2s" value="3" checked="checked">
                         No sabe/no responde.
                    </label>
                </div>
@@ -88,17 +88,17 @@
                <strong>¿Con cuanta frecuencia se revisa el inventario?</strong>
                <div class = "radio">
                    <label >
-                       <input type="radio" name="optionRadios" id="optionsRadios1" value="option1" checked="checked">
+                       <input type="radio" name="pregunta3s" id="pregunta3s" value="1" checked="checked">
                         Si.
                    </label>
                    <br>
                    <label >
-                       <input type="radio" name="optionRadios" id="optionsRadios1" value="option1" checked="checked">
+                       <input type="radio" name="pregunta3s" id="pregunta3s" value="2" checked="checked">
                         No.
                    </label>
                    <br>
                    <label >
-                       <input type="radio" name="optionRadios" id="optionsRadios1" value="option1" checked="checked">
+                       <input type="radio" name="pregunta3s" id="pregunta3s" value="3" checked="checked">
                         No sabe/no responde.
                    </label>
                </div>
@@ -109,17 +109,17 @@
                <strong>¿La bitácora es llenada por el personal especializado?</strong>
                <div class = "radio">
                    <label >
-                       <input type="radio" name="optionRadios" id="optionsRadios1" value="option1" checked="checked">
+                       <input type="radio" name="pregunta4s" id="pregunta4s" value="1" checked="checked">
                         Si.
                    </label>
                    <br>
                    <label >
-                       <input type="radio" name="optionRadios" id="optionsRadios1" value="option1" checked="checked">
+                       <input type="radio" name="pregunta4s" id="pregunta4s" value="2" checked="checked">
                         No.
                    </label>
                    <br>
                    <label >
-                       <input type="radio" name="optionRadios" id="optionsRadios1" value="option1" checked="checked">
+                       <input type="radio" name="pregunta4s" id="pregunta4s" value="3" checked="checked">
                         No sabe/no responde.
                    </label>
                </div>
@@ -130,61 +130,41 @@
                 <h3 class="text-center"> <strong>Caracteristicas de la bitocara (Señala las opciones)</strong></h3>
             </div>
 
-            <div class = "title-part">
+              {{!-- <div class = "title-part">
                <strong>¿La bitácora es llenada por el personal especializado?</strong>
                <div class = "radio">
                    <label >
-                       <input type="radio" name="optionRadios" id="optionsRadios1" value="option1" checked="checked">
+                       <input type="radio" name="pregunta6s" id="pregunta6s" value="1" checked="checked">
                         Si.
                    </label>
                    <br>
                    <label >
-                       <input type="radio" name="optionRadios" id="optionsRadios1" value="option1" checked="checked">
+                       <input type="radio" name="pregunta6s" id="pregunta6s" value="2" checked="checked">
                         No.
                    </label>
                    <br>
                    <label >
-                       <input type="radio" name="optionRadios" id="optionsRadios1" value="option1" checked="checked">
+                       <input type="radio" name="pregunta6s" id="pregunta6s" value="3" checked="checked">
                         No sabe/no responde.
                    </label>
                </div>
-            </div>
-
-              <div class = "title-part">
-               <strong>¿La bitácora es llenada por el personal especializado?</strong>
-               <div class = "radio">
-                   <label >
-                       <input type="radio" name="optionRadios" id="optionsRadios1" value="option1" checked="checked">
-                        Si.
-                   </label>
-                   <br>
-                   <label >
-                       <input type="radio" name="optionRadios" id="optionsRadios1" value="option1" checked="checked">
-                        No.
-                   </label>
-                   <br>
-                   <label >
-                       <input type="radio" name="optionRadios" id="optionsRadios1" value="option1" checked="checked">
-                        No sabe/no responde.
-                   </label>
-               </div>
-            </div>
+            </div> --}}
 
               <div class = "title-part">
                <strong>¿Señala fecha de detección de la falla?</strong>
                <div class = "radio">
                    <label >
-                       <input type="radio" name="optionRadios" id="optionsRadios1" value="option1" checked="checked">
+                       <input type="radio" name="pregunta5s" id="pregunta5s" value="1" checked="checked">
                         Si.
                    </label>
                    <br>
                    <label >
-                       <input type="radio" name="optionRadios" id="optionsRadios1" value="option1" checked="checked">
+                       <input type="radio" name="pregunta5s" id="pregunta5s" value="2" checked="checked">
                         No.
                    </label>
                    <br>
                    <label >
-                       <input type="radio" name="optionRadios" id="optionsRadios1" value="option1" checked="checked">
+                       <input type="radio" name="pregunta5s" id="pregunta5s" value="3" checked="checked">
                         No sabe/no responde.
                    </label>
                </div>
@@ -194,17 +174,17 @@
                <strong>¿Señala fecha de corrección de la falla y revisión de que el equipo funcione correctamente?</strong>
                <div class = "radio">
                    <label >
-                       <input type="radio" name="optionRadios" id="optionsRadios1" value="option1" checked="checked">
+                       <input type="radio" name="pregunta6s" id="pregunta6s" value="1" checked="checked">
                         Si.
                    </label>
                    <br>
                    <label >
-                       <input type="radio" name="optionRadios" id="optionsRadios1" value="option1" checked="checked">
+                       <input type="radio" name="pregunta6s" id="pregunta6s" value="2" checked="checked">
                         No.
                    </label>
                    <br>
                    <label >
-                       <input type="radio" name="optionRadios" id="optionsRadios1" value="option1" checked="checked">
+                       <input type="radio" name="pregunta6s" id="pregunta6s" value="3" checked="checked">
                         No sabe/no responde.
                    </label>
                </div>
@@ -215,17 +195,17 @@
                <strong>¿Se poseen registros individuales de los equipos?</strong>
                <div class = "radio">
                    <label >
-                       <input type="radio" name="optionRadios" id="optionsRadios1" value="option1" checked="checked">
+                       <input type="radio" name="pregunta7s" id="pregunta7s" value="1" checked="checked">
                         Si.
                    </label>
                    <br>
                    <label >
-                       <input type="radio" name="optionRadios" id="optionsRadios1" value="option1" checked="checked">
+                       <input type="radio" name="pregunta7s" id="pregunta7s" value="2" checked="checked">
                         No.
                    </label>
                    <br>
                    <label >
-                       <input type="radio" name="optionRadios" id="optionsRadios1" value="option1" checked="checked">
+                       <input type="radio" name="pregunta7s" id="pregunta7s" value="3" checked="checked">
                         No sabe/no responde.
                    </label>
                </div>
@@ -235,17 +215,17 @@
                <strong>¿La bitácora hace referencia a hojas de servicio, en donde se detalla la falla, y las causas que la orginaron, asi como las refacciones utilizadas?</strong>
                <div class = "radio">
                    <label >
-                       <input type="radio" name="optionRadios" id="optionsRadios1" value="option1" checked="checked">
+                       <input type="radio" name="pregunta8s" id="pregunta8s" value="1" checked="checked">
                         Si.
                    </label>
                    <br>
                    <label >
-                       <input type="radio" name="optionRadios" id="optionsRadios1" value="option1" checked="checked">
+                       <input type="radio" name="pregunta8s" id="pregunta8s" value="2" checked="checked">
                         No.
                    </label>
                    <br>
                    <label >
-                       <input type="radio" name="optionRadios" id="optionsRadios1" value="option1" checked="checked">
+                       <input type="radio" name="pregunta8s" id="pregunta8s" value="3" checked="checked">
                         No sabe/no responde.
                    </label>
                </div>
@@ -255,17 +235,17 @@
                <strong>¿Se lleva un control de los equipos en garantía, para que a la finalización de ésta, se integren a algún programa de mantenimiento?</strong>
                <div class = "radio">
                    <label >
-                       <input type="radio" name="optionRadios" id="optionsRadios1" value="option1" checked="checked">
+                       <input type="radio" name="pregunta9s" id="pregunta9s" value="1" checked="checked">
                         Si.
                    </label>
                    <br>
                    <label >
-                       <input type="radio" name="optionRadios" id="optionsRadios1" value="option1" checked="checked">
+                       <input type="radio" name="pregunta9s" id="pregunta9s" value="2" checked="checked">
                         No.
                    </label>
                    <br>
                    <label >
-                       <input type="radio" name="optionRadios" id="optionsRadios1" value="option1" checked="checked">
+                       <input type="radio" name="pregunta9s" id="pregunta9s" value="3" checked="checked">
                         No sabe/no responde.
                    </label>
                </div>
@@ -275,17 +255,17 @@
                <strong>¿Se cuenta con servicio de mantenimiento para todos los equipos?</strong>
                <div class = "radio">
                    <label >
-                       <input type="radio" name="optionRadios" id="optionsRadios1" value="option1" checked="checked">
+                       <input type="radio" name="pregunta10s" id="pregunta10s" value="1" checked="checked">
                         Si.
                    </label>
                    <br>
                    <label >
-                       <input type="radio" name="optionRadios" id="optionsRadios1" value="option1" checked="checked">
+                       <input type="radio" name="pregunta10s" id="pregunta10s" value="2" checked="checked">
                         No.
                    </label>
                    <br>
                    <label >
-                       <input type="radio" name="optionRadios" id="optionsRadios1" value="option1" checked="checked">
+                       <input type="radio" name="pregunta10s" id="pregunta10s" value="3" checked="checked">
                         No sabe/no responde.
                    </label>
                </div>
@@ -295,17 +275,17 @@
                <strong>¿Con cuanta frecuencia se realiza mantenimiento a los equipos?</strong>
                <div class = "radio">
                    <label >
-                       <input type="radio" name="optionRadios" id="optionsRadios1" value="option1" checked="checked">
+                       <input type="radio" name="pregunta11s" id="pregunta11s" value="1" checked="checked">
                         Si.
                    </label>
                    <br>
                    <label >
-                       <input type="radio" name="optionRadios" id="optionsRadios1" value="option1" checked="checked">
+                       <input type="radio" name="pregunta11s" id="pregunta11s" value="2" checked="checked">
                         No.
                    </label>
                    <br>
                    <label >
-                       <input type="radio" name="optionRadios" id="optionsRadios1" value="option1" checked="checked">
+                       <input type="radio" name="pregunta11s" id="pregunta11s" value="3" checked="checked">
                         No sabe/no responde.
                    </label>
                </div>
@@ -315,17 +295,17 @@
                <strong>¿Se cuenta con procedimientos definidos para la adquisición de nuevos equipos?</strong>
                <div class = "radio">
                    <label >
-                       <input type="radio" name="optionRadios" id="optionsRadios1" value="option1" checked="checked">
+                       <input type="radio" name="pregunta12s" id="pregunta12s" value="1" checked="checked">
                         Si.
                    </label>
                    <br>
                    <label >
-                       <input type="radio" name="optionRadios" id="optionsRadios1" value="option1" checked="checked">
+                       <input type="radio" name="pregunta12s" id="pregunta12s" value="2" checked="checked">
                         No.
                    </label>
                    <br>
                    <label >
-                       <input type="radio" name="optionRadios" id="optionsRadios1" value="option1" checked="checked">
+                       <input type="radio" name="pregunta12s" id="pregunta12s" value="3" checked="checked">
                         No sabe/no responde.
                    </label>
                </div>
@@ -335,31 +315,53 @@
                <strong>¿Se tienen criterios de evaluación para determinar el rendimiento de los equipos a adquirir y así elegir el mejor?</strong>
                <div class = "radio">
                    <label >
-                       <input type="radio" name="optionRadios" id="optionsRadios1" value="option1" checked="checked">
+                       <input type="radio" name="pregunta13s" id="pregunta13s" value="1" checked="checked">
                         Si.
                    </label>
                    <br>
                    <label >
-                       <input type="radio" name="optionRadios" id="optionsRadios1" value="option1" checked="checked">
+                       <input type="radio" name="pregunta13s" id="pregunta13s" value="2" checked="checked">
                         No.
                    </label>
                    <br>
                    <label >
-                       <input type="radio" name="optionRadios" id="optionsRadios1" value="option1" checked="checked">
+                       <input type="radio" name="pregunta13s" id="pregunta13s" value="3" checked="checked">
                         No sabe/no responde.
                    </label>
                </div>
             </div>
         <div class = "form-group">
           <label for="inputempresa"><strong>Documentos probatorios:</strong></label>
-            <input type="text" class="form-control" id="inputempresa" placeholder="Digite su respuesta">   
+            <input type="text" class="form-control" name="docs" id="docs" placeholder="Digite su respuesta">   
 
         </div>
 
         <div class = "form-group">
           <label for="inputempresa"><strong>Total:</strong></label>
-            <input type="text" class="form-control" id="inputempresa" placeholder="Digite su respuesta">   
+          <div class="row jistify-content-center">
+              <div class="col-ms-3">
+                  <label for="inputempresa"><strong>Conteo del si:</strong></label>
+                  <input type="text" class="form-control" name="totalss" id="totalss" placeholder="Digite su respuesta" >
+              </div>
+              <div class="col-ms-2"> </div>
+              <div class="col-ms-3">
+                  <label for="inputempresa"><strong>Conteo del no:</strong></label>
+                  <input type="text" class="form-control" name="totalns" id="totalns" placeholder="Digite su respuesta" >
+              </div>
+              <div class="col-ms-2"> </div>
+              <div class="col-ms-3">
+                  <label for="inputempresa"><strong>Conteo del N/S</strong></label>
+                  <input type="text" class="form-control" name="totalnss" id="totalnss" placeholder="Digite su respuesta" >
 
+              </div>
+          </div>
+        </div>
+        <div class ="form-group">
+        <div class="row justify-content-center">
+            <div class="col-ms-10">
+                <button type="submit" class="btn btn-login center">Enviar</button>
+            </div>
+        </div>
         </div>
 
     </div>

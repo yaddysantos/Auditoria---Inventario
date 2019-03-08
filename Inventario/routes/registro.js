@@ -33,7 +33,7 @@ if (req.body._id === "") {
      au.save();
 } else {    
      console.log(req.body._id);
-     auditor.findByIdAndUpdate(req.body._id, { $set: req.body }, { new: true}, (err, model) => {
+     auditors.findByIdAndUpdate(req.body._id, { $set: req.body }, { new: true}, (err, model) => {
      if (err) throw err;
      });
 }

@@ -23,7 +23,7 @@ router.post('/coperar', (req, res, next) => {
     cl.save();
   } else {    
     console.log(req.body._id);
-    auditor.findByIdAndUpdate(req.body._id, { $set: req.body }, { new: true}, (err, model) => {
+    clientes.findByIdAndUpdate(req.body._id, { $set: req.body }, { new: true}, (err, model) => {
       if (err) throw err;
     });
   }
