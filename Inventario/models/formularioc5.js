@@ -25,10 +25,10 @@ let formularioc5Schema = new Schema({
      pregunta19s: {type: Number, max:3 },
      pregunta20s: {type: Number, max:3 },
      pregunta21s: {type: Number, max:3 },
-     doc: {type: Number},
-     totals: {type: Number},
-     totaln: {type: Number},
-     totalns: {type: Number}
+     docs: {type: Number},
+     totalss: {type: Number},
+     totalns: {type: Number},
+     totalnss: {type: Number}
 }, {versionKey: false});
 
 let formularioc5 = mongoose.model('formularioc5s', formularioc5Schema);

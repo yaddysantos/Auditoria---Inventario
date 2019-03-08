@@ -11,10 +11,10 @@ let formularioc4Schema = new Schema({
      pregunta5s: {type: Number, max:3 },
      pregunta6s: {type: Number, max:3 },
      pregunta7s: {type: Number, max:3 },
-     doc: {type: Number},
-     totals: {type: Number},
-     totaln: {type: Number},
-     totalns: {type: Number}
+     docs: {type: Number},
+     totalss: {type: Number},
+     totalns: {type: Number},
+     totalnss: {type: Number}
 }, {versionKey: false});
 
 let formularioc4 = mongoose.model('formularioc4s', formularioc4Schema);
